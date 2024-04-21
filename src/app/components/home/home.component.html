@@ -1,7 +1,10 @@
 <app-topmenu></app-topmenu>
+<!-- Wrapper -->
+<div class=""></div>
+
 <!-- Header menu -->
 <!-- prettier-ignore-attribute class -->
-<div
+<section
   class="
     mt-[30px] 
     mx-[20px] 
@@ -13,6 +16,8 @@
     font-[inter] 
     p-[15px]
   bg-[#ebebeb] 
+    flex
+    flex-col
     "
 >
   <nav
@@ -82,14 +87,14 @@
       </div>
     </div>
   </div>
-</div>
+</section>
 
 <!-- safe waters/across block -->
-<div
-  class="mt-[60px] mx-[20px] lg:mx-[50px] w-[calc(100vw-40px)] lg:w-[calc(100vw-100px)] font-[inter] flex xl:flex-row flex-col gap-[60px]"
+<section
+  class="mt-[60px] mx-[20px] lg:mx-[50px] w-[calc(100vw-40px)] lg:w-[calc(100vw-100px)] font-[inter] flex 2xl:flex-row flex-col gap-[60px]"
 >
   <div
-    class="w-full xl:w-[715px] h-[515px] sm:h-[715px] rounded-br-[100px] sm:rounded-br-[200px] text-center p-[20px] relative overflow-clip"
+    class="w-full 2xl:w-[715px] h-[515px] sm:h-[715px] rounded-br-[100px] sm:rounded-br-[200px] text-center p-[20px] relative overflow-clip"
   >
     <p
       class="text-[40px] sm:text-[60px] istok-web-bold text-white drop-shadow-3xl mt-[30px] z-[20]"
@@ -110,7 +115,7 @@
     />
   </div>
   <div
-    class="xl:w-[calc(100%-715px)] istok-web-bold text-[30px] text-left bg-[#f1eded] xl:relative p-[40px] flex flex-wrap"
+    class="2xl:w-[calc(100%-715px)] istok-web-bold text-[30px] text-left bg-[#f1eded] relative p-[40px] flex flex-wrap"
   >
     <div class="flex flex-col flex-shrink text-[4vw] 2xl:text-[65px]">
       <p>Across:</p>
@@ -120,10 +125,10 @@
       <p>/time zones</p>
     </div>
     <div
-      class="flex flex-col justify-center absolute xl:top-[-50px] right-0 h-full"
+      class="flex flex-col justify-center absolute mt-[-100px] md:mt-[-50px] lg:mt-0 md:top-[-20px] xl:top-[-150px] right-0 h-full"
     >
       <svg
-        class="ml-auto w-[10vw] h-[10vw] xl:w-[15vw] xl:h-[15vw] 2xl:w-[25vw] 2xl:h-[25vw]"
+        class="ml-auto w-[150px] h-[150px] md:w-[25vw] md:h-[25vw] 2xl:w-[25vw] 2xl:h-[25vw] fill-[#007FBB] z-0"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 -960 960 960"
       >
@@ -132,9 +137,69 @@
         />
       </svg>
     </div>
-    <p class="font-Inter font-normal mt-[40px]">
+    <p class="font-Inter font-normal mt-[40px] text-[4vw] xl:text-[25px] z-10">
       Our services are tailored to ease the cultural differences and keep your
       course no matter the waters
     </p>
   </div>
-</div>
+</section>
+<!-- Coaches bubble -->
+<section class="flex flex-row mt-[60px] mx-[20px] lg:mx-[50px]">
+  <div
+    class="flex flex-col items-center p-[20px] sm:p-[50px] min-h-[315px] w-full bg-[#A1C4C0] rounded-t-[120px]"
+  >
+    <h2
+      class="istok-web-bold text-[30px] sm:text-[4vw] mt-[30px] text-center w-full"
+    >
+      Meet our coaches and consultants
+    </h2>
+    <div
+      class="flex flex-row flex-wrap gap-5 mt-[20px] justify-evenly items-center"
+    >
+      <div class="flex flex-col items-center">
+        <img
+          class="rounded-full h-[270px] border-[15px]"
+          src="/assets/img/profiles/Volker-Moser-sq-grey.jpg"
+          alt="Volker Moser profile picture"
+        />
+        <figcaption class="inter-400 text-[20px]">Volker Moser</figcaption>
+      </div>
+      <div class="flex flex-col items-center">
+        <img
+          class="rounded-full h-[270px] border-[15px]"
+          src="/assets/img/profiles/Sandra-Jitianu.jpg"
+          alt="Sandra Jitianu profile picture"
+        />
+        <figcaption class="inter-400 text-[20px]">Sandra Jitianu</figcaption>
+      </div>
+      <div class="flex flex-col items-center">
+        <img
+          class="rounded-full h-[270px] border-[15px]"
+          src="/assets/img/profiles/Thilo_Beyer.webp"
+          alt="Thilo Beyer profile picture"
+        />
+        <figcaption class="inter-400 text-[20px]">Thilo Beyer</figcaption>
+      </div>
+      <div
+        class="flex flex-col sm:flex-row flex-wrap flex-grow justify-evenly gap-5"
+      >
+        <div class="flex flex-col items-center">
+          <img
+            class="rounded-full h-[270px] border-[15px]"
+            src="/assets/img/profiles/Marco-Weber.webp"
+            alt="Marco Weber profile picture"
+          />
+          <figcaption class="inter-400 text-[20px]">Marco Weber</figcaption>
+        </div>
+        <div class="flex flex-col items-center">
+          <img
+            class="rounded-full h-[270px] border-[15px]"
+            src="/assets/img/profiles/Cristian-Pauls.webp"
+            alt="Christian Pauls profile picture"
+          />
+          <figcaption class="inter-400 text-[20px]">Christian Pauls</figcaption>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
