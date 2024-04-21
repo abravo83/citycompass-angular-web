@@ -117,7 +117,9 @@
   <div
     class="2xl:w-[calc(100%-715px)] istok-web-bold text-[30px] text-left bg-[#f1eded] relative p-[40px] flex flex-wrap"
   >
-    <div class="flex flex-col flex-shrink text-[4vw] 2xl:text-[65px]">
+    <div
+      class="flex flex-col flex-shrink text-[27px] sm:text-[4vw] 2xl:text-[65px]"
+    >
       <p>Across:</p>
       <p>/countries</p>
       <p>/languages</p>
@@ -201,5 +203,86 @@
         </div>
       </div>
     </div>
+  </div>
+</section>
+
+<!-- Gallery bubble -->
+<!-- prettier-ignore-attribute class -->
+<section
+  class="
+  flex 
+  lg:flex-row 
+  mt-[60px] 
+  mx-[20px] 
+  lg:mx-[50px] 
+  w-[calc(100%-90px)] 
+  gap-[30px]
+  "
+>
+  <div class="flex flex-col w-[calc(100%-40px)] lg:w-[calc(50%-40px)]">
+    <figure>
+      <img
+        class="object-contain"
+        srcset="
+          /assets/img/gallery/gallery-1-3800.webp 3800w,
+          /assets/img/gallery/gallery-1-2000.webp 2000w,
+          /assets/img/gallery/gallery-1-1200.webp 1200w,
+          /assets/img/gallery/gallery-1-600.webp   600w
+        "
+        alt="Image 1 gallery of an event"
+      />
+    </figure>
+    <figure>
+      <img
+        class="mt-[30px]"
+        srcset="
+          /assets/img/gallery/gallery-2-350.webp   350w,
+          /assets/img/gallery/gallery-2-600.webp   600w,
+          /assets/img/gallery/gallery-2-1500.webp 1500w,
+          /assets/img/gallery/gallery-2-3000.webp 3000w
+        "
+        alt="An image with a collage of photos from events"
+      />
+    </figure>
+  </div>
+  <div class="flex flex-col w-[calc(100%-40px)] lg:w-[50%]">
+    <div class="flex flex-row gap-[15px]">
+      <div class="w-[calc(50%-5px)]">
+        <figure>
+          <img
+            srcset="
+              /assets/img/gallery/gallery-3-1000.webp 1000w,
+              /assets/img/gallery/gallery-3-600.webp   600w,
+              /assets/img/gallery/gallery-3-350.webp   350w
+            "
+            alt="A picture of a group rafting down a river"
+          />
+        </figure>
+      </div>
+      <div class="w-[calc(50%-5px)]">
+        <figure>
+          <img
+            srcset="
+              /assets/img/gallery/gallery-4-1000.webp 1000w,
+              /assets/img/gallery/gallery-4-600.webp   600w,
+              /assets/img/gallery/gallery-4-350.webp   350w
+            "
+            alt=""
+          />
+        </figure>
+      </div>
+    </div>
+    <figure>
+      <img
+        class="mt-[30px] w-full"
+        srcset="
+          /assets/img/gallery/gallery-5-350.webp   350w,
+          /assets/img/gallery/gallery-5-600.webp   600w,
+          /assets/img/gallery/gallery-5-1000.webp 1500w,
+          /assets/img/gallery/gallery-5-3000.webp 3000w
+        "
+        alt="AN image with a collage of photos from events"
+      />
+    </figure>
   </div>
 </section>
