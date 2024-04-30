@@ -1,93 +1,91 @@
 <app-topmenu></app-topmenu>
 <!-- Wrapper -->
-<div class=""></div>
-
-<!-- Header menu -->
-<!-- prettier-ignore-attribute class -->
-<section
-  class="
-    mt-[30px] 
-    mx-[20px] 
-    lg:mx-[50px] 
-    w-[calc(100vw-40px)] 
-    lg:w-[calc(100vw-100px)] 
-    h-[80vh] 
-    rounded-[30px] 
-    font-[inter] 
-    p-[15px]
-  bg-[#ebebeb] 
-    flex
-    flex-col
-    "
->
-  <nav
-    class="p-2 px-3 sm:p-4 sm:px-6 w-full sm:h-[100px] text-[12px] sm:text-[14px] lg:text-[1.5vw]"
-  >
-    <ul class="flex flex-row gap-4 inter-400 flex-wrap justify-end">
-      <li>About us</li>
-      <li>/</li>
-      <li>International Consulting & Coaching</li>
-      <li>/</li>
-      <li>Services</li>
-      <li>/</li>
-      <li>Meet us</li>
-    </ul>
-  </nav>
-  <div class="flex flex-col lg:flex-row h-[80%]">
-    <div
-      class="lg:ml-[77px] h-full flex-grow text-center flex flex-col justify-center text-[40px] istok-web-bold sm:text-[60px] lg:text-[5vw]"
+<div class="max-w-[2000px] mx-auto px-[50px]">
+  <!-- Header menu -->
+  <!-- prettier-ignore-attribute class -->
+  <!-- mt-[30px] 
+  mx-[20px] 
+  lg:mx-[50px] 
+  w-[calc(100vw-40px)] 
+  lg:w-[calc(100vw-100px)] 
+  h-[80vh] 
+  rounded-[30px] 
+  font-[inter] 
+  p-[15px]
+bg-[#ebebeb] 
+  flex
+  flex-col
+  " -->
+  <section class="bg-[#ebebeb] flex flex-col rounded-[60px]">
+    <nav
+      class="p-2 px-3 sm:p-4 sm:px-6 w-full sm:h-[100px] text-[12px] sm:text-[14px] lg:text-[1.5vw]"
     >
-      <h1>City Compass.</h1>
-      <p>Feel at home.</p>
-      <div class="hidden lg:block">
-        <p class="inter-400 text-[16px] mt-[30px] text-center">
+      <ul class="flex flex-row gap-4 inter-400 flex-wrap justify-end">
+        <li>About us</li>
+        <li>/</li>
+        <li>International Consulting & Coaching</li>
+        <li>/</li>
+        <li>Services</li>
+        <li>/</li>
+        <li>Meet us</li>
+      </ul>
+    </nav>
+    <div class="flex flex-col lg:flex-row h-[80%] justify-around">
+      <div
+        class="lg:px-[80px] h-full text-center flex flex-col justify-center text-[40px] istok-web-bold sm:text-[60px] lg:text-[5vw] 2xl:text-[100px]"
+      >
+        <h1>City Compass.</h1>
+        <p>Feel at home.</p>
+        <div class="hidden lg:block">
+          <p class="inter-400 text-[30px] lg:text-[36px] mt-[30px] text-center">
+            We are here to help you navigate the current landscape by focusing
+            on your course.
+          </p>
+          <div class="mx-auto my-[30px] text-center">
+            <button
+              class="rounded-full bg-[#007FBB] px-6 py-2 text-white inter-400 text-[40px]"
+            >
+              Contact us
+            </button>
+          </div>
+        </div>
+      </div>
+      <div
+        id="compass-img-container"
+        class="w-full lg:w-[45vw] 2xl:w-[550px] flex justify-center items-center p-[20px]"
+      >
+        <div class="w-[300px] md:w-[400px] 2xl:w-[500px]">
+          <div
+            class="rounded-full border-[20px] border-[rgba(255,255,255,0.4)] overflow-clip"
+          >
+            <div
+              class="rounded-full border-[20px] border-[rgba(255,255,255,1)] overflow-clip"
+            >
+              <img
+                src="/assets/img/home-menu-compas-512.webp"
+                alt=""
+                loading="eager"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="block lg:hidden">
+        <p class="inter-400 text-[24px] mt-[30px] md:mt-[22px] text-center">
           We are here to help you navigate the current landscape by focusing on
           your course.
         </p>
-        <div class="mx-auto my-[30px] text-center">
+        <div class="mx-auto my-[30px] md:my-[25px] text-center">
           <button
-            class="rounded-full bg-[#007FBB] px-6 py-2 text-white inter-400 text-[40px]"
+            class="rounded-full bg-[#007FBB] px-6 py-2 text-white inter-400"
           >
             Contact us
           </button>
         </div>
       </div>
     </div>
-    <div
-      id="compass-img-container"
-      class="w-full lg:w-[45vw] flex justify-center items-center"
-    >
-      <div class="w-[30vw] min-w-[234px] max-h-[415px] lg:w-[25vw]">
-        <div
-          class="rounded-full border-[20px] border-[rgba(255,255,255,0.4)] overflow-clip"
-        >
-          <div
-            class="rounded-full border-[20px] border-[rgba(255,255,255,1)] overflow-clip"
-          >
-            <img
-              src="/assets/img/home-menu-compas-512.webp"
-              alt=""
-              loading="eager"
-            />
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="block lg:hidden">
-      <p class="inter-400 text-[16px] mt-[30px] md:mt-[22px] text-center">
-        We are here to help you navigate the current landscape by focusing on
-        your course.
-      </p>
-      <div class="mx-auto my-[30px] md:my-[25px] text-center">
-        <button
-          class="rounded-full bg-[#007FBB] px-6 py-2 text-white inter-400"
-        >
-          Contact us
-        </button>
-      </div>
-    </div>
-  </div>
-</section>
+  </section>
+</div>
 
 <!-- safe waters/across block -->
 <section
@@ -143,20 +141,21 @@
         "
     >
       <!-- prettier-ignore-attribute class -->
+      <!-- class="
+        ml-auto 
+        w-[150px] 
+        h-[150px] 
+        md:w-[20vw] 
+        md:h-[20vw] 
+        xl:w-[22vw] 
+        xl:h-[22vw] 
+        2xl:w-[23vw] 
+        2xl:h-[23vw] 
+        fill-[#007FBB] 
+        z-0
+      " -->
       <svg
-        class="
-          ml-auto 
-          w-[150px] 
-          h-[150px] 
-          md:w-[20vw] 
-          md:h-[20vw] 
-          xl:w-[22vw] 
-          xl:h-[22vw] 
-          2xl:w-[23vw] 
-          2xl:h-[23vw] 
-          fill-[#007FBB] 
-          z-0
-        "
+        class="w-[50%] md:w-[100%] fill-[#007FBB] ml-auto"
         xmlns="http://www.w3.org/2000/svg"
         viewBox="0 -960 960 960"
       >
