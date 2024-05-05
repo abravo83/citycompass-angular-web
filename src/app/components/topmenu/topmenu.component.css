@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+
+.sticky-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.wrapper-menu {
+  margin: 10px auto 0;
+  padding: 0 20px;
+}
+
+@media (min-width: 500px) {
+  .wrapper-menu {
+    max-width: 2500px;
+    margin: 10px auto 0;
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .wrapper-menu {
+    max-width: 2500px;
+    margin: 10px auto 0;
+    padding: 0 50px;
+  }
+}

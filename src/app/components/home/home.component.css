@@ -3,6 +3,11 @@
   padding: 0 20px;
 }
 
+.wrapper-top {
+  margin: 150px auto 0;
+  padding: 0 20px;
+}
+
 .wrapperNarrowTop {
   margin: 10px auto 0;
   padding: 0 5px;
@@ -12,6 +17,12 @@
   .wrapper {
     max-width: 2500px;
     margin: 30px auto 0;
+    padding: 0 50px;
+  }
+
+  .wrapper-top {
+    max-width: 2500px;
+    margin: 150px auto 0;
     padding: 0 50px;
   }
 
@@ -26,6 +37,12 @@
   .wrapper {
     max-width: 2500px;
     margin: 100px auto 0;
+    padding: 0 50px;
+  }
+
+  .wrapper-top {
+    max-width: 2500px;
+    margin: 150px auto 0;
     padding: 0 50px;
   }
 
