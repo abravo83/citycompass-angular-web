@@ -1,422 +1,432 @@
-<app-topmenu class="fixed top-0 left-0 z-10"></app-topmenu>
-<div class="wrapper-top mt-[150px]">
-  <section class="2xl:bg-[#ebebeb] bg-[#A1C4C0] flex flex-col rounded-[60px]">
-    <nav
-      class="py-4 px-4 sm:p-4 sm:px-6 w-full sm:h-[100px] text-[14px] sm:text-[16px] lg:text-[26px] 2xl:text-[32px]"
-    >
-      <ul class="flex flex-row gap-4 inter-400 flex-wrap justify-end">
-        <li>About us</li>
-        <li>/</li>
-        <li>International Consulting & Coaching</li>
-        <li>/</li>
-        <li>Services</li>
-        <li>/</li>
-        <li>Meet us</li>
-      </ul>
-    </nav>
-    <div class="flex flex-col lg:flex-row h-[80%] justify-around">
-      <div
-        class="lg:px-[80px] h-full text-center flex flex-col justify-center text-[40px] istok-web-bold sm:text-[60px] lg:text-[5vw] 2xl:text-[100px]"
+<header>
+  <app-topmenu class="fixed top-0 left-0 z-10 block 2xl:hidden"></app-topmenu>
+  <div class="wrapper-top">
+    <section class="2xl:bg-[#ebebeb] bg-[#A1C4C0] flex flex-col rounded-[60px]">
+      <nav
+        class="py-4 px-4 sm:p-4 sm:px-6 w-full sm:h-[100px] text-[14px] sm:text-[16px] lg:text-[26px] 2xl:text-[32px] hidden 2xl:block"
       >
-        <h1>City Compass.</h1>
-        <p>Feel at home.</p>
-        <div class="hidden lg:block">
+        <ul class="flex flex-row gap-4 inter-400 flex-wrap justify-end">
+          <li>About us</li>
+          <li>/</li>
+          <li>International Consulting & Coaching</li>
+          <li>/</li>
+          <li>Services</li>
+          <li>/</li>
+          <li>Meet us</li>
+        </ul>
+      </nav>
+      <div class="flex flex-col lg:flex-row h-[80%] justify-around">
+        <div
+          class="lg:px-[80px] h-full text-center flex flex-col justify-center text-[40px] istok-web-bold sm:text-[60px] lg:text-[5vw] 2xl:text-[100px]"
+        >
+          <h1>City Compass.</h1>
+          <p>Feel at home.</p>
+          <div class="hidden lg:block">
+            <p
+              class="inter-400 text-[30px] lg:text-[36px] mt-[30px] text-center p-[10px]"
+            >
+              We are here to help you navigate the current landscape by focusing
+              on your course.
+            </p>
+            <div class="mx-auto my-[30px] text-center">
+              <button
+                class="rounded-full bg-[#007FBB] px-6 py-2 text-white inter-400 text-[40px]"
+              >
+                Contact us
+              </button>
+            </div>
+          </div>
+        </div>
+        <div
+          id="compass-img-container"
+          class="w-full lg:w-[45vw] 2xl:w-[550px] flex justify-center items-center p-[20px]"
+        >
+          <div class="w-[300px] md:w-[400px] 2xl:w-[500px]">
+            <div
+              class="rounded-full border-[20px] border-[rgba(255,255,255,0.4)] overflow-clip"
+            >
+              <div
+                class="rounded-full border-[20px] border-[rgba(255,255,255,1)] overflow-clip"
+              >
+                <img
+                  src="/assets/img/home-menu-compas-512.webp"
+                  alt=""
+                  loading="eager"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="block lg:hidden">
           <p
-            class="inter-400 text-[30px] lg:text-[36px] mt-[30px] text-center p-[10px]"
+            class="inter-400 text-[24px] mt-[30px] md:mt-[22px] text-center p-[10px]"
           >
             We are here to help you navigate the current landscape by focusing
             on your course.
           </p>
-          <div class="mx-auto my-[30px] text-center">
+          <div class="mx-auto my-[30px] md:my-[25px] text-center">
             <button
-              class="rounded-full bg-[#007FBB] px-6 py-2 text-white inter-400 text-[40px]"
+              class="rounded-full bg-[#007FBB] px-6 py-2 text-white inter-400"
             >
               Contact us
             </button>
           </div>
         </div>
       </div>
-      <div
-        id="compass-img-container"
-        class="w-full lg:w-[45vw] 2xl:w-[550px] flex justify-center items-center p-[20px]"
+    </section>
+  </div>
+</header>
+<main>
+  <section
+    class="font-[inter] flex 2xl:flex-row flex-col-reverse gap-[10px] 2xl:gap-[60px] wrapper"
+  >
+    <div
+      class="w-full 2xl:w-[715px] h-[515px] sm:h-[715px] rounded-br-[75px] md:rounded-br-[200px] text-center p-[20px] relative overflow-clip"
+    >
+      <p
+        class="text-[40px] sm:text-[60px] istok-web-bold text-white drop-shadow-3xl mt-[30px] z-[20]"
       >
-        <div class="w-[300px] md:w-[400px] 2xl:w-[500px]">
-          <div
-            class="rounded-full border-[20px] border-[rgba(255,255,255,0.4)] overflow-clip"
-          >
-            <div
-              class="rounded-full border-[20px] border-[rgba(255,255,255,1)] overflow-clip"
-            >
-              <img
-                src="/assets/img/home-menu-compas-512.webp"
-                alt=""
-                loading="eager"
-              />
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="block lg:hidden">
-        <p
-          class="inter-400 text-[24px] mt-[30px] md:mt-[22px] text-center p-[10px]"
+        In safe waters
+      </p>
+      <p
+        class="istok-web-bold text-[30px] sm:text-[40px] text-teal-600 mt-[100px] sm:mt-[150px] select-none shadow-black bg-[#ffffff67]"
+        style="-webkit-text-stroke: 1px black"
+      >
+        With us you are in safe waters together with hundreds of other customers
+        since 2008
+      </p>
+      <img
+        src="/assets/img/home-safe-waters-1300.webp"
+        alt=""
+        class="absolute top-0 left-0 -z-10 h-full w-full object-cover"
+      />
+    </div>
+    <!-- prettier-ignore-attribute class -->
+    <div
+      class="
+        relative 
+        2xl:w-[calc(100%-715px)] 
+        p-[40px] 
+        flex 
+        flex-col 
+        flex-wrap
+        bg-[#f1eded] 
+        istok-web-bold 
+        text-[30px] 
+        text-left
+        rounded-t-[60px] 2xl:rounded-none
+      "
+    >
+      <div class="flex flex-row justify-between items-center">
+        <div
+          class="flex flex-col flex-shrink text-[27px] sm:text-[4vw] 2xl:text-[65px] w-[100%]"
         >
-          We are here to help you navigate the current landscape by focusing on
-          your course.
-        </p>
-        <div class="mx-auto my-[30px] md:my-[25px] text-center">
-          <button
-            class="rounded-full bg-[#007FBB] px-6 py-2 text-white inter-400"
+          <p>Across:</p>
+          <p>/countries</p>
+          <p>/languages</p>
+          <p>/cultures</p>
+          <p class="text-nowrap">/time zones</p>
+        </div>
+        <!-- prettier-ignore-attribute class -->
+        <div
+          class="
+            flex 
+            flex-col
+            flex-shrink 
+            justify-center
+            items-center 
+            h-full
+            "
+        >
+          <svg
+            class="w-[100%] md:w-[100%] fill-[#007FBB] ml-auto"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 -960 960 960"
           >
-            Contact us
-          </button>
+            <path
+              d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z"
+            />
+          </svg>
         </div>
       </div>
+      <p class="font-Inter font-normal mt-[40px] text-[4vw] xl:text-[25px]">
+        Our services are tailored to ease the cultural differences and keep your
+        course no matter the waters
+      </p>
     </div>
   </section>
-</div>
-
-<section
-  class="font-[inter] flex 2xl:flex-row flex-col-reverse gap-[10px] 2xl:gap-[60px] wrapper"
->
-  <div
-    class="w-full 2xl:w-[715px] h-[515px] sm:h-[715px] rounded-br-[75px] md:rounded-br-[200px] text-center p-[20px] relative overflow-clip"
-  >
-    <p
-      class="text-[40px] sm:text-[60px] istok-web-bold text-white drop-shadow-3xl mt-[30px] z-[20]"
-    >
-      In safe waters
-    </p>
-    <p
-      class="istok-web-bold text-[30px] sm:text-[40px] text-teal-600 mt-[100px] sm:mt-[150px] select-none shadow-black bg-[#ffffff67]"
-      style="-webkit-text-stroke: 1px black"
-    >
-      With us you are in safe waters together with hundreds of other customers
-      since 2008
-    </p>
-    <img
-      src="/assets/img/home-safe-waters-1300.webp"
-      alt=""
-      class="absolute top-0 left-0 -z-10 h-full w-full object-cover"
-    />
-  </div>
-  <!-- prettier-ignore-attribute class -->
-  <div
-    class="
-      relative 
-      2xl:w-[calc(100%-715px)] 
-      p-[40px] 
-      flex 
-      flex-col 
-      flex-wrap
-      bg-[#f1eded] 
-      istok-web-bold 
-      text-[30px] 
-      text-left
-      rounded-t-[60px] 2xl:rounded-none
-    "
-  >
-    <div class="flex flex-row justify-between items-center">
-      <div
-        class="flex flex-col flex-shrink text-[27px] sm:text-[4vw] 2xl:text-[65px] w-[100%]"
-      >
-        <p>Across:</p>
-        <p>/countries</p>
-        <p>/languages</p>
-        <p>/cultures</p>
-        <p class="text-nowrap">/time zones</p>
-      </div>
-      <!-- prettier-ignore-attribute class -->
-      <div
-        class="
-          flex 
-          flex-col
-          flex-shrink 
-          justify-center
-          items-center 
-          h-full
-          "
-      >
-        <svg
-          class="w-[100%] md:w-[100%] fill-[#007FBB] ml-auto"
-          xmlns="http://www.w3.org/2000/svg"
-          viewBox="0 -960 960 960"
-        >
-          <path
-            d="M480-80q-82 0-155-31.5t-127.5-86Q143-252 111.5-325T80-480q0-83 31.5-155.5t86-127Q252-817 325-848.5T480-880q83 0 155.5 31.5t127 86q54.5 54.5 86 127T880-480q0 82-31.5 155t-86 127.5q-54.5 54.5-127 86T480-80Zm0-82q26-36 45-75t31-83H404q12 44 31 83t45 75Zm-104-16q-18-33-31.5-68.5T322-320H204q29 50 72.5 87t99.5 55Zm208 0q56-18 99.5-55t72.5-87H638q-9 38-22.5 73.5T584-178ZM170-400h136q-3-20-4.5-39.5T300-480q0-21 1.5-40.5T306-560H170q-5 20-7.5 39.5T160-480q0 21 2.5 40.5T170-400Zm216 0h188q3-20 4.5-39.5T580-480q0-21-1.5-40.5T574-560H386q-3 20-4.5 39.5T380-480q0 21 1.5 40.5T386-400Zm268 0h136q5-20 7.5-39.5T800-480q0-21-2.5-40.5T790-560H654q3 20 4.5 39.5T660-480q0 21-1.5 40.5T654-400Zm-16-240h118q-29-50-72.5-87T584-782q18 33 31.5 68.5T638-640Zm-234 0h152q-12-44-31-83t-45-75q-26 36-45 75t-31 83Zm-200 0h118q9-38 22.5-73.5T376-782q-56 18-99.5 55T204-640Z"
-          />
-        </svg>
-      </div>
-    </div>
-    <p class="font-Inter font-normal mt-[40px] text-[4vw] xl:text-[25px]">
-      Our services are tailored to ease the cultural differences and keep your
-      course no matter the waters
-    </p>
-  </div>
-</section>
-<!-- Coaches bubble -->
-<section class="wrapper flex flex-row mt-[60px] mx-[20px] lg:mx-[50px]">
-  <!-- prettier-ignore-attribute class -->
-  <div
-    class="
-      flex 
-      flex-col 
-      items-center 
-      p-[20px] 
-      sm:p-[50px] 
-      min-h-[315px] 
-      w-full 
-      bg-[#A1C4C0] 
-      rounded-tl-[120px] 
-      rounded-br-[120px]
-    "
-  >
-    <h2
-      class="istok-web-bold text-[30px] sm:text-[4vw] 2xl:text-[80px] mt-[30px] text-center w-full"
-    >
-      Meet our coaches and consultants
-    </h2>
-    <div
-      class="flex flex-row flex-wrap gap-5 2xl:gap-[120px] mt-[20px] justify-evenly items-center"
-    >
-      <div class="flex flex-col items-center">
-        <img
-          class="rounded-full h-[270px] border-[15px]"
-          src="/assets/img/profiles/Volker-Moser-sq-grey.jpg"
-          alt="Volker Moser profile picture"
-        />
-        <figcaption class="inter-400 text-[20px]">Volker Moser</figcaption>
-      </div>
-      <div class="flex flex-col items-center">
-        <img
-          class="rounded-full h-[270px] border-[15px]"
-          src="/assets/img/profiles/Sandra-Jitianu.jpg"
-          alt="Sandra Jitianu profile picture"
-        />
-        <figcaption class="inter-400 text-[20px]">Sandra Jitianu</figcaption>
-      </div>
-      <div class="flex flex-col items-center">
-        <img
-          class="rounded-full h-[270px] border-[15px]"
-          src="/assets/img/profiles/Thilo_Beyer.webp"
-          alt="Thilo Beyer profile picture"
-        />
-        <figcaption class="inter-400 text-[20px]">Thilo Beyer</figcaption>
-      </div>
-      <div
-        class="flex flex-col sm:flex-row flex-wrap flex-grow justify-evenly gap-5 2xl:gap-[120px]"
-      >
-        <div class="flex flex-col items-center">
-          <img
-            class="rounded-full h-[270px] border-[15px]"
-            src="/assets/img/profiles/Marco-Weber.webp"
-            alt="Marco Weber profile picture"
-          />
-          <figcaption class="inter-400 text-[20px]">Marco Weber</figcaption>
-        </div>
-        <div class="flex flex-col items-center">
-          <img
-            class="rounded-full h-[270px] border-[15px]"
-            src="/assets/img/profiles/Cristian-Pauls.webp"
-            alt="Christian Pauls profile picture"
-          />
-          <figcaption class="inter-400 text-[20px]">Christian Pauls</figcaption>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- Gallery bubble -->
-<section class="wrapper">
-  <!-- w-[calc(100%-40px)] 
-    lg:w-[calc(100%-90px)]  -->
-  <!-- mx-[20px] 
-    lg:mx-[50px]  -->
-  <!-- prettier-ignore-attribute class -->
-  <div
-    class="
-    flex 
-    lg:flex-row 
-    gap-[30px]
-    max-h-[1100px]
-    "
-  >
-    <div
-      class="flex flex-col flex-grow w-[calc(100%-40px)] lg:w-[calc(50%-40px)]"
-    >
-      <figure>
-        <img
-          class="object-contain"
-          srcset="
-            /assets/img/gallery/gallery-1-3800.webp 3800w,
-            /assets/img/gallery/gallery-1-2000.webp 2000w,
-            /assets/img/gallery/gallery-1-1200.webp 1200w,
-            /assets/img/gallery/gallery-1-600.webp   600w
-          "
-          alt="Image 1 gallery of an event"
-        />
-      </figure>
-      <figure class="flex flex-col flex-grow">
-        <img
-          class="mt-[30px] flex-grow"
-          srcset="
-            /assets/img/gallery/gallery-2-350.webp   350w,
-            /assets/img/gallery/gallery-2-600.webp   600w,
-            /assets/img/gallery/gallery-2-1500.webp 1500w,
-            /assets/img/gallery/gallery-2-3000.webp 3000w
-          "
-          alt="An image with a collage of photos from events"
-        />
-      </figure>
-    </div>
-    <div class="flex flex-col w-[calc(100%-40px)] lg:w-[50%]">
-      <div class="flex flex-row gap-[15px]">
-        <div class="w-[calc(50%-5px)]">
-          <figure>
-            <img
-              srcset="
-                /assets/img/gallery/gallery-3-1000.webp 1000w,
-                /assets/img/gallery/gallery-3-600.webp   600w,
-                /assets/img/gallery/gallery-3-350.webp   350w
-              "
-              alt="A picture of a group rafting down a river"
-            />
-          </figure>
-        </div>
-        <div class="w-[calc(50%-5px)]">
-          <figure>
-            <img
-              srcset="
-                /assets/img/gallery/gallery-4-1000.webp 1000w,
-                /assets/img/gallery/gallery-4-600.webp   600w,
-                /assets/img/gallery/gallery-4-350.webp   350w
-              "
-              alt=""
-            />
-          </figure>
-        </div>
-      </div>
-      <figure>
-        <img
-          class="mt-[30px] w-full h-[26vw] max-h-[667px]"
-          srcset="
-            /assets/img/gallery/gallery-5-350.webp   350w,
-            /assets/img/gallery/gallery-5-600.webp   600w,
-            /assets/img/gallery/gallery-5-1000.webp 1500w,
-            /assets/img/gallery/gallery-5-3000.webp 3000w
-          "
-          alt="AN image with a collage of photos from events"
-        />
-      </figure>
-    </div>
-  </div>
-  <!-- w-[calc(100vw-40px)] 
-  lg:w-[calc(100vw-100px)]  -->
-  <!-- mt-[30px]  -->
-  <!-- prettier-ignore-attribute class -->
-  <div
-    class="
-      wrapperNarrowTop 
-      flex 
-      flex-row 
-      items-center 
-      mx-[15px] 
-      lg:mx-[50px] 
-      justify-center 
-      h-[15vw]
-      max-h-[390px] 
-      bg-[#0080bb78]
-      text-center
-    "
-  >
-    <p class="istok-web-500 text-[5vw] md:text-[4vw] 2xl:text-[90px]">
-      Get an impression of our community gatherings
-    </p>
-  </div>
-</section>
-
-<section class="wrapper">
-  <!-- class="mt-[80px] mx-[20px] lg:mx-[50px] w-[calc(100vw-40px)] lg:w-[calc(100vw-100px)] bg-[#a9a6a6] p-[10px] md:p-[5vw]" -->
-  <div class="w-full bg-[#a9a6a6] p-[20px] md:p-[100px] text-center">
-    <p class="istok-web-500 text-[25px] sm:text-[5vw] 2xl:text-[90px]">
-      What our customers say
-    </p>
+  <!-- Coaches bubble -->
+  <section class="wrapper flex flex-row mt-[60px] mx-[20px] lg:mx-[50px]">
     <!-- prettier-ignore-attribute class -->
     <div
       class="
         flex 
-        flex-row 
-        flex-wrap 
-        justify-evenly 
-        bg-white 
-        rounded-tr-[90px] 
-        sm:rounded-tr-[120px] 
-        rounded-b-[90px] 
-        sm:rounded-b-[120px] 
+        flex-col 
+        items-center 
         p-[20px] 
-        sm:p-[60px] 
-        gap-[40px]
+        sm:p-[50px] 
+        min-h-[315px] 
+        w-full 
+        bg-[#A1C4C0] 
+        rounded-tl-[120px] 
+        rounded-br-[120px]
+      "
+    >
+      <h2
+        class="istok-web-bold text-[30px] sm:text-[4vw] 2xl:text-[80px] mt-[30px] text-center w-full"
+      >
+        Meet our coaches and consultants
+      </h2>
+      <div
+        class="flex flex-row flex-wrap gap-5 2xl:gap-[120px] mt-[20px] justify-evenly items-center"
+      >
+        <div class="flex flex-col items-center">
+          <img
+            class="rounded-full h-[270px] border-[15px]"
+            src="/assets/img/profiles/Volker-Moser-sq-grey.jpg"
+            alt="Volker Moser profile picture"
+          />
+          <figcaption class="inter-400 text-[20px]">Volker Moser</figcaption>
+        </div>
+        <div class="flex flex-col items-center">
+          <img
+            class="rounded-full h-[270px] border-[15px]"
+            src="/assets/img/profiles/Sandra-Jitianu.jpg"
+            alt="Sandra Jitianu profile picture"
+          />
+          <figcaption class="inter-400 text-[20px]">Sandra Jitianu</figcaption>
+        </div>
+        <div class="flex flex-col items-center">
+          <img
+            class="rounded-full h-[270px] border-[15px]"
+            src="/assets/img/profiles/Thilo_Beyer.webp"
+            alt="Thilo Beyer profile picture"
+          />
+          <figcaption class="inter-400 text-[20px]">Thilo Beyer</figcaption>
+        </div>
+        <div
+          class="flex flex-col sm:flex-row flex-wrap flex-grow justify-evenly gap-5 2xl:gap-[120px]"
+        >
+          <div class="flex flex-col items-center">
+            <img
+              class="rounded-full h-[270px] border-[15px]"
+              src="/assets/img/profiles/Marco-Weber.webp"
+              alt="Marco Weber profile picture"
+            />
+            <figcaption class="inter-400 text-[20px]">Marco Weber</figcaption>
+          </div>
+          <div class="flex flex-col items-center">
+            <img
+              class="rounded-full h-[270px] border-[15px]"
+              src="/assets/img/profiles/Cristian-Pauls.webp"
+              alt="Christian Pauls profile picture"
+            />
+            <figcaption class="inter-400 text-[20px]">
+              Christian Pauls
+            </figcaption>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery bubble -->
+  <section class="wrapper">
+    <!-- w-[calc(100%-40px)] 
+      lg:w-[calc(100%-90px)]  -->
+    <!-- mx-[20px] 
+      lg:mx-[50px]  -->
+    <!-- prettier-ignore-attribute class -->
+    <div
+      class="
+      flex 
+      lg:flex-row 
+      gap-[30px]
+      max-h-[1100px]
       "
     >
       <div
-        class="bg-[#a1c4c088] rounded-[35px] border-[2px] border-gray-500 w-[300px] h-[300px] p-[20px]"
+        class="flex flex-col flex-grow w-[calc(100%-40px)] lg:w-[calc(50%-40px)]"
       >
-        <h3 class="font-Inter font-semibold text-[20px]">Michael</h3>
-        <p>
-          “The team was incredibly professional and attended our request like
-          their own needs.
-        </p>
-        <br />
-        <p>
-          We solved what was bothering us in a week when we estimated it will
-          take us a couple of months to solve.”
-        </p>
+        <figure>
+          <img
+            class="object-contain"
+            srcset="
+              /assets/img/gallery/gallery-1-3800.webp 3800w,
+              /assets/img/gallery/gallery-1-2000.webp 2000w,
+              /assets/img/gallery/gallery-1-1200.webp 1200w,
+              /assets/img/gallery/gallery-1-600.webp   600w
+            "
+            alt="Image 1 gallery of an event"
+          />
+        </figure>
+        <figure class="flex flex-col flex-grow">
+          <img
+            class="mt-[30px] flex-grow"
+            srcset="
+              /assets/img/gallery/gallery-2-350.webp   350w,
+              /assets/img/gallery/gallery-2-600.webp   600w,
+              /assets/img/gallery/gallery-2-1500.webp 1500w,
+              /assets/img/gallery/gallery-2-3000.webp 3000w
+            "
+            alt="An image with a collage of photos from events"
+          />
+        </figure>
       </div>
-      <div
-        class="bg-[#a1c4c088] rounded-[35px] border-[2px] border-gray-500 w-[300px] h-[300px] p-[20px]"
-      >
-        <h3 class="font-Inter font-semibold text-[20px]">Simon</h3>
-        <p>
-          “An excellent introduction for new visitors to Romania. I was made to
-          feel very welcome and it is clear these guys know what they are
-          talking about – Recommended!”
-        </p>
-      </div>
-      <div
-        class="bg-[#a1c4c088] rounded-[35px] border-[2px] border-gray-500 w-[300px] h-[300px] p-[20px]"
-      >
-        <h3 class="font-Inter font-semibold text-[20px]">Andreia</h3>
-        <p>“What an incredible help for us.</p>
-        <p>
-          We were all installed and running in such a brief time it was like we
-          just had moved across the street.
-        </p>
-        <p>Totally recommended!”</p>
+      <div class="flex flex-col w-[calc(100%-40px)] lg:w-[50%]">
+        <div class="flex flex-row gap-[15px]">
+          <div class="w-[calc(50%-5px)]">
+            <figure>
+              <img
+                srcset="
+                  /assets/img/gallery/gallery-3-1000.webp 1000w,
+                  /assets/img/gallery/gallery-3-600.webp   600w,
+                  /assets/img/gallery/gallery-3-350.webp   350w
+                "
+                alt="A picture of a group rafting down a river"
+              />
+            </figure>
+          </div>
+          <div class="w-[calc(50%-5px)]">
+            <figure>
+              <img
+                srcset="
+                  /assets/img/gallery/gallery-4-1000.webp 1000w,
+                  /assets/img/gallery/gallery-4-600.webp   600w,
+                  /assets/img/gallery/gallery-4-350.webp   350w
+                "
+                alt=""
+              />
+            </figure>
+          </div>
+        </div>
+        <figure>
+          <img
+            class="mt-[30px] w-full h-[26vw] max-h-[667px]"
+            srcset="
+              /assets/img/gallery/gallery-5-350.webp   350w,
+              /assets/img/gallery/gallery-5-600.webp   600w,
+              /assets/img/gallery/gallery-5-1000.webp 1500w,
+              /assets/img/gallery/gallery-5-3000.webp 3000w
+            "
+            alt="AN image with a collage of photos from events"
+          />
+        </figure>
       </div>
     </div>
-  </div>
-</section>
-
-<!-- Contact section -->
-<!-- prettier-ignore-attribute class -->
-<section
-  class="
-    mt-[80px] 
-    mx-[20px] 
-    lg:mx-[50px] 
-    w-[calc(100vw-40px)] 
-    lg:w-[calc(100vw-100px)] 
-    p-[10px] 
-    md:p-[5vw]
-    text-center
-  "
->
-  <p class="istok-web-500 text-[30px] sm:text-[5vw] 2xl:text-[90px]">
-    Are you ready to jump onboard?
-  </p>
-  <p class="font-Inter text-[4vw] 2xl:text-[90px] text-white mt-[50px]">
-    <span class="px-[60px] py-[20px] bg-[#007FBB] rounded-full"
-      >Contact us now</span
+    <!-- w-[calc(100vw-40px)] 
+    lg:w-[calc(100vw-100px)]  -->
+    <!-- mt-[30px]  -->
+    <!-- prettier-ignore-attribute class -->
+    <div
+      class="
+        wrapperNarrowTop 
+        flex 
+        flex-row 
+        items-center 
+        mx-[15px] 
+        lg:mx-[50px] 
+        justify-center 
+        h-[15vw]
+        max-h-[390px] 
+        bg-[#0080bb78]
+        text-center
+      "
     >
-  </p>
-</section>
+      <p class="istok-web-500 text-[5vw] md:text-[4vw] 2xl:text-[90px]">
+        Get an impression of our community gatherings
+      </p>
+    </div>
+  </section>
+
+  <section class="wrapper">
+    <!-- class="mt-[80px] mx-[20px] lg:mx-[50px] w-[calc(100vw-40px)] lg:w-[calc(100vw-100px)] bg-[#a9a6a6] p-[10px] md:p-[5vw]" -->
+    <div class="w-full bg-[#a9a6a6] p-[20px] md:p-[100px] text-center">
+      <p class="istok-web-500 text-[25px] sm:text-[5vw] 2xl:text-[90px]">
+        What our customers say
+      </p>
+      <!-- prettier-ignore-attribute class -->
+      <div
+        class="
+          flex 
+          flex-row 
+          flex-wrap 
+          justify-evenly 
+          bg-white 
+          rounded-tr-[90px] 
+          sm:rounded-tr-[120px] 
+          rounded-b-[90px] 
+          sm:rounded-b-[120px] 
+          p-[20px] 
+          sm:p-[60px] 
+          gap-[40px]
+        "
+      >
+        <div
+          class="bg-[#a1c4c088] rounded-[35px] border-[2px] border-gray-500 w-[300px] h-[300px] p-[20px]"
+        >
+          <h3 class="font-Inter font-semibold text-[20px]">Michael</h3>
+          <p>
+            “The team was incredibly professional and attended our request like
+            their own needs.
+          </p>
+          <br />
+          <p>
+            We solved what was bothering us in a week when we estimated it will
+            take us a couple of months to solve.”
+          </p>
+        </div>
+        <div
+          class="bg-[#a1c4c088] rounded-[35px] border-[2px] border-gray-500 w-[300px] h-[300px] p-[20px]"
+        >
+          <h3 class="font-Inter font-semibold text-[20px]">Simon</h3>
+          <p>
+            “An excellent introduction for new visitors to Romania. I was made
+            to feel very welcome and it is clear these guys know what they are
+            talking about – Recommended!”
+          </p>
+        </div>
+        <div
+          class="bg-[#a1c4c088] rounded-[35px] border-[2px] border-gray-500 w-[300px] h-[300px] p-[20px]"
+        >
+          <h3 class="font-Inter font-semibold text-[20px]">Andreia</h3>
+          <p>“What an incredible help for us.</p>
+          <p>
+            We were all installed and running in such a brief time it was like
+            we just had moved across the street.
+          </p>
+          <p>Totally recommended!”</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact section -->
+  <!-- prettier-ignore-attribute class -->
+  <section
+    class="
+    wrapper
+      mt-[80px] 
+      mx-[20px] 
+      lg:mx-[50px] 
+      p-[10px] 
+      md:p-[5vw]
+      text-center
+      "
+  >
+    <!-- w-[calc(100vw-40px)] 
+      lg:w-[calc(100vw-100px)]  -->
+    <p class="istok-web-500 text-[30px] sm:text-[5vw] 2xl:text-[90px]">
+      Are you ready to jump onboard?
+    </p>
+    <p class="font-Inter text-[4vw] 2xl:text-[90px] text-white mt-[50px]">
+      <span class="px-[60px] py-[20px] bg-[#007FBB] rounded-full"
+        >Contact us now</span
+      >
+    </p>
+  </section>
+</main>
+<footer>
+  <div class="mt-[100px]"></div>
+  <app-footer class="wrapper__menu flex"></app-footer>
+</footer>

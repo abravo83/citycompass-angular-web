@@ -13,11 +13,21 @@
   padding: 0 5px;
 }
 
+.wrapper__menu {
+  padding: 0;
+}
+
 @media (min-width: 500px) {
   .wrapper {
     max-width: 2500px;
     margin: 30px auto 0;
     padding: 0 50px;
+  }
+
+  .wrapper__menu {
+    max-width: 2500px;
+    margin: 0 auto;
+    /* padding: 0 50px; */
   }
 
   .wrapper-top {
@@ -40,9 +50,14 @@
     padding: 0 50px;
   }
 
+  .wrapper__menu {
+    max-width: 2500px;
+    padding: 0 50px;
+  }
+
   .wrapper-top {
     max-width: 2500px;
-    margin: 150px auto 0;
+    margin: 10px auto 0;
     padding: 0 50px;
   }
 
