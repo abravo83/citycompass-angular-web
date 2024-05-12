@@ -111,3 +111,24 @@
   font-style: normal;
   font-variation-settings: "slnt" 0;
 }
+
+.wrapper {
+  margin: 10px auto 0;
+  padding: 0 20px;
+}
+
+@media (min-width: 500px) {
+  .wrapper {
+    max-width: 2500px;
+    margin: 30px auto 0;
+    padding: 0 50px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .wrapper {
+    max-width: 2500px;
+    margin: 100px auto 0;
+    padding: 0 100px;
+  }
+}
