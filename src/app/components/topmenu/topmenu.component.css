@@ -18,7 +18,7 @@
 
 @media (min-width: 500px) {
   .wrapper-menu {
-    max-width: 2500px;
+    max-width: 1500px;
     margin: 10px auto 0;
     padding: 0 50px;
   }
@@ -26,7 +26,7 @@
 
 @media (min-width: 1536px) {
   .wrapper-menu {
-    max-width: 2500px;
+    max-width: 1500px;
     margin: 10px auto 0;
     padding: 0 50px;
   }
