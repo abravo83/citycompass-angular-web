@@ -7,6 +7,7 @@ import { ConsultingComponent } from './components/services/consulting/consulting
 import { CoachingComponent } from './components/services/coaching/coaching.component';
 import { TrainingComponent } from './components/services/training/training.component';
 import { ExperiencesComponent } from './components/experiences/experiences.component';
+import { VolkerMoserComponent } from './components/profiles/volker-moser/volker-moser.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -16,6 +17,8 @@ export const routes: Routes = [
   { path: 'services/consulting', component: ConsultingComponent },
   { path: 'services/coaching', component: CoachingComponent },
   { path: 'services/training', component: TrainingComponent },
+  { path: 'profiles', redirectTo: 'profiles/volker-moser', pathMatch: 'full' },
+  { path: 'profiles/volker-moser', component: VolkerMoserComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', redirectTo: 'home' },
 ];
