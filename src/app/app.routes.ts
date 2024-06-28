@@ -10,6 +10,8 @@ import { ExperiencesComponent } from './components/experiences/experiences.compo
 import { VolkerMoserComponent } from './components/profiles/volker-moser/volker-moser.component';
 import { SandraJitianuComponent } from './components/profiles/sandra-jitianu/sandra-jitianu.component';
 import { ThiloBeyerComponent } from './components/profiles/thilo-beyer/thilo-beyer.component';
+import { MarcoWeberComponent } from './components/profiles/marco-weber/marco-weber.component';
+import { ChristianPaulsComponent } from './components/profiles/christian-pauls/christian-pauls.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -23,6 +25,8 @@ export const routes: Routes = [
   { path: 'profiles/volker-moser', component: VolkerMoserComponent },
   { path: 'profiles/sandra-jitianu', component: SandraJitianuComponent },
   { path: 'profiles/thilo-beyer', component: ThiloBeyerComponent },
+  { path: 'profiles/marco-weber', component: MarcoWeberComponent },
+  { path: 'profiles/christian-pauls', component: ChristianPaulsComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', redirectTo: 'home' },
 ];
