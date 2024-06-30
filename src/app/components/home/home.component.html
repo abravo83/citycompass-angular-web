@@ -184,8 +184,10 @@
         min-h-[315px] 
         w-full 
         bg-[#A1C4C0] 
-        rounded-tl-[120px] 
-        rounded-br-[120px]
+        rounded-tl-[60px] 
+        sm:rounded-tl-[120px] 
+        rounded-br-[60px]
+        sm:rounded-br-[120px]
       "
     >
       <h2
@@ -193,58 +195,82 @@
       >
         Meet our coaches and consultants
       </h2>
-      <div
-        class="flex flex-row flex-wrap gap-5 2xl:gap-[120px] mt-[20px] justify-evenly items-center"
-      >
-        <a routerLink="/profiles/volker-moser">
-          <figure class="flex flex-col items-center">
-            <img
-              class="rounded-full h-[270px] border-[15px]"
-              src="/assets/img/profiles/Volker-Moser-sq-grey.jpg"
-              alt="Volker Moser profile picture"
-            />
-            <figcaption class="inter-400 text-[20px]">Volker Moser</figcaption>
-          </figure>
-        </a>
-        <a routerLink="/profiles/sandra-jitianu">
-          <figure class="flex flex-col items-center">
-            <img
-              class="rounded-full h-[270px] border-[15px]"
-              src="/assets/img/profiles/Sandra-Jitianu.jpg"
-              alt="Sandra Jitianu profile picture"
-            />
-            <figcaption class="inter-400 text-[20px]">
-              Sandra Jitianu
-            </figcaption>
-          </figure>
-        </a>
-        <a routerLink="/profiles/thilo-beyer">
-          <figure class="flex flex-col items-center">
-            <img
-              class="rounded-full h-[270px] border-[15px]"
-              src="/assets/img/profiles/Thilo_Beyer.webp"
-              alt="Thilo Beyer profile picture"
-            />
-            <figcaption class="inter-400 text-[20px]">Thilo Beyer</figcaption>
-          </figure>
-        </a>
+      <div class="flex justify-center" id="carrouselContainer">
+        <button class="sm:hidden" (click)="scrollProfileLeft()">
+          <svg
+            class="mr-[-20vw]"
+            xmlns="http://www.w3.org/2000/svg"
+            height="80px"
+            viewBox="0 -960 960 960"
+            width="80px"
+            fill="#64ADA5"
+          >
+            <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+          </svg>
+        </button>
         <div
-          class="flex flex-col sm:flex-row flex-wrap flex-grow justify-evenly gap-5 2xl:gap-[120px]"
+          id="profile-carrousel"
+          class="flex flex-row overflow-x-auto md:flex-wrap w-[55vw] sm:w-auto ml-[15%] sm:ml-0 gap-[50px] sm:gap-5 2xl:gap-[120px] mt-[20px] sm:justify-evenly items-center snap-x snap-mandatory no-scrollbar"
+          #profilesCarrousel
         >
-          <a routerLink="/profiles/marco-weber">
+          <a
+            class="shrink-0 snap-center ml-[10vw] sm:ml-0"
+            routerLink="/profiles/volker-moser"
+          >
             <figure class="flex flex-col items-center">
               <img
-                class="rounded-full h-[270px] border-[15px]"
+                class="rounded-full h-[40vw] sm:h-[270px] border-[8px] sm:border-[15px]"
+                src="/assets/img/profiles/Volker-Moser-sq-grey.jpg"
+                alt="Volker Moser profile picture"
+              />
+              <figcaption class="inter-400 text-[20px]">
+                Volker Moser
+              </figcaption>
+            </figure>
+          </a>
+          <a class="shrink-0 snap-center" routerLink="/profiles/sandra-jitianu">
+            <figure class="flex flex-col items-center">
+              <img
+                class="rounded-full h-[40vw] sm:h-[270px] border-[8px] sm:border-[15px]"
+                src="/assets/img/profiles/Sandra-Jitianu.jpg"
+                alt="Sandra Jitianu profile picture"
+              />
+              <figcaption class="inter-400 text-[20px]">
+                Sandra Jitianu
+              </figcaption>
+            </figure>
+          </a>
+          <a class="shrink-0 snap-center" routerLink="/profiles/thilo-beyer">
+            <figure class="flex flex-col items-center">
+              <img
+                class="rounded-full h-[40vw] sm:h-[270px] border-[8px] sm:border-[15px]"
+                src="/assets/img/profiles/Thilo_Beyer.webp"
+                alt="Thilo Beyer profile picture"
+              />
+              <figcaption class="inter-400 text-[20px]">Thilo Beyer</figcaption>
+            </figure>
+          </a>
+          <!-- Next two a element are only visible below small breakpoint -->
+          <a
+            class="snap-center sm:hidden shrink-0"
+            routerLink="/profiles/marco-weber"
+          >
+            <figure class="flex flex-col items-center">
+              <img
+                class="rounded-full h-[40vw] sm:h-[270px] border-[8px] sm:border-[15px]"
                 src="/assets/img/profiles/Marco-Weber.webp"
                 alt="Marco Weber profile picture"
               />
               <figcaption class="inter-400 text-[20px]">Marco Weber</figcaption>
             </figure>
           </a>
-          <a routerLink="/profiles/christian-pauls">
+          <a
+            class="snap-center mr-[75%] sm:hidden shrink-0"
+            routerLink="/profiles/christian-pauls"
+          >
             <figure class="flex flex-col items-center">
               <img
-                class="rounded-full h-[270px] border-[15px]"
+                class="rounded-full h-[40vw] sm:h-[270px] border-[8px] sm:border-[15px]"
                 src="/assets/img/profiles/Cristian-Pauls.webp"
                 alt="Christian Pauls profile picture"
               />
@@ -253,7 +279,47 @@
               </figcaption>
             </figure>
           </a>
+          <div
+            class="shrink-0 hidden sm:flex flex-row md:flex-wrap flex-grow justify-evenly gap-5 2xl:gap-[120px]"
+          >
+            <a routerLink="/profiles/marco-weber">
+              <figure class="flex flex-col items-center">
+                <img
+                  class="rounded-full h-[270px] border-[15px]"
+                  src="/assets/img/profiles/Marco-Weber.webp"
+                  alt="Marco Weber profile picture"
+                />
+                <figcaption class="inter-400 text-[20px]">
+                  Marco Weber
+                </figcaption>
+              </figure>
+            </a>
+            <a routerLink="/profiles/christian-pauls">
+              <figure class="flex flex-col items-center">
+                <img
+                  class="rounded-full h-[270px] border-[15px]"
+                  src="/assets/img/profiles/Cristian-Pauls.webp"
+                  alt="Christian Pauls profile picture"
+                />
+                <figcaption class="inter-400 text-[20px]">
+                  Christian Pauls
+                </figcaption>
+              </figure>
+            </a>
+          </div>
         </div>
+        <button class="sm:hidden" (click)="scrollProfileRight()">
+          <svg
+            class="mr-[-1vw]"
+            xmlns="http://www.w3.org/2000/svg"
+            height="80px"
+            viewBox="0 -960 960 960"
+            width="80px"
+            fill="#64ADA5"
+          >
+            <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+          </svg>
+        </button>
       </div>
     </div>
   </section>
