@@ -12,10 +12,12 @@ import { SandraJitianuComponent } from './components/profiles/sandra-jitianu/san
 import { ThiloBeyerComponent } from './components/profiles/thilo-beyer/thilo-beyer.component';
 import { MarcoWeberComponent } from './components/profiles/marco-weber/marco-weber.component';
 import { ChristianPaulsComponent } from './components/profiles/christian-pauls/christian-pauls.component';
+import { ContactUsComponent } from './components/contact-us/contact-us.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
   { path: 'about-us', component: AboutUsComponent },
+  { path: 'contact-us', component: ContactUsComponent },
   { path: 'experiences', component: ExperiencesComponent },
   { path: 'services', component: ServicesComponent },
   { path: 'services/consulting', component: ConsultingComponent },

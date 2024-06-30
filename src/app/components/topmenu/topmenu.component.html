@@ -11,11 +11,13 @@
       <button
         class="bg-[#007Fbb] hidden sm:inline-block px-[16px] py-[6px] rounded-full mx-auto"
       >
-        <span
-          class="text-white text-[16px] md:text-[22px] font-Inter font-medium"
-        >
-          Contact us
-        </span>
+        <a routerLink="/contact-us">
+          <span
+            class="text-white text-[16px] md:text-[22px] font-Inter font-medium"
+          >
+            Contact us
+          </span>
+        </a>
       </button>
       <nav
         class="ml-auto mr-[30px] font-Inter text-[24px] hidden 2xl:inline-block"
@@ -23,19 +25,25 @@
         <ul class="flex items-center">
           <li>
             <a routerLink="/about-us"> About us </a>
-            / &nbsp;
+            /&nbsp;
           </li>
           <li>
-            <a routerLink="/services/consulting"> International Consulting </a>
-            &
-            <a routerLink="/services/coaching"> Coaching </a>
-            / &nbsp;
+            <a routerLink="/services/consulting">International Consulting </a>
+            /&nbsp;
           </li>
           <li>
-            <a routerLink="/services"> Services </a>
-            / &nbsp;
+            <a routerLink="/services/coaching">Coaching </a>
+            /&nbsp;
           </li>
-          <li>Meet us</li>
+          <li>
+            <a routerLink="/services/training">Training </a>
+            /&nbsp;
+          </li>
+          <li>
+            <a routerLink="/services">Services </a>
+          </li>
+          <!-- / &nbsp; -->
+          <!-- <li>Meet us</li> -->
         </ul>
       </nav>
       <button
