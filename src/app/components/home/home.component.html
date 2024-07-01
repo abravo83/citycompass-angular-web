@@ -435,62 +435,85 @@
 
   <section class="wrapper">
     <!-- class="mt-[80px] mx-[20px] lg:mx-[50px] w-[calc(100vw-40px)] lg:w-[calc(100vw-100px)] bg-[#a9a6a6] p-[10px] md:p-[5vw]" -->
-    <div class="w-full bg-[#a9a6a6] p-[20px] md:p-[100px] text-center">
+    <div
+      class="w-full bg-[#a9a6a6] px-[10px] py-[20px] md:py-[100px] text-center"
+    >
       <p class="istok-web-500 text-[25px] sm:text-[5vw] 2xl:text-[90px]">
         What our customers say
       </p>
       <!-- prettier-ignore-attribute class -->
       <div
-        class="
-          flex 
-          flex-row 
-          flex-wrap 
-          justify-evenly 
-          bg-white 
-          rounded-tr-[90px] 
-          sm:rounded-tr-[120px] 
-          rounded-b-[90px] 
-          sm:rounded-b-[120px] 
-          p-[20px] 
-          sm:p-[60px] 
-          gap-[40px]
-        "
+        class="flex relative items-center justify-center"
+        id="clients-carrousel-container"
       >
+        <button class="w-[40px] absolute left-0" (click)="scrollClientsLeft()">
+          <svg
+            class="mr-[0vw]"
+            xmlns="http://www.w3.org/2000/svg"
+            height="80px"
+            viewBox="0 -960 960 960"
+            width="80px"
+            fill="#64ADA5"
+          >
+            <path d="M400-80 0-480l400-400 71 71-329 329 329 329-71 71Z" />
+          </svg>
+        </button>
         <div
-          class="bg-[#a1c4c088] rounded-[35px] border-[2px] border-gray-500 w-[300px] h-[300px] p-[20px]"
+          id="clientsCarrousel"
+          class="flex flex-row flex-nowrap justify-start bg-white rounded-tr-[90px] sm:rounded-tr-[120px] rounded-b-[90px] sm:rounded-b-[120px] p-[20px] sm:p-[60px] gap-[40px] snap-x snap-mandatory overflow-x-auto no-scrollbar"
+          #clientsCarrousel
         >
-          <h3 class="font-Inter font-semibold text-[20px]">Michael</h3>
-          <p>
-            “The team was incredibly professional and attended our request like
-            their own needs.
-          </p>
-          <br />
-          <p>
-            We solved what was bothering us in a week when we estimated it will
-            take us a couple of months to solve.”
-          </p>
+          <div
+            class="bg-[#a1c4c088] rounded-[35px] border-[2px] border-gray-500 w-[300px] h-[300px] p-[20px] shrink-0 snap-center"
+          >
+            <h3 class="font-Inter font-semibold text-[20px]">Michael</h3>
+            <p>
+              “The team was incredibly professional and attended our request
+              like their own needs.
+            </p>
+            <br />
+            <p>
+              We solved what was bothering us in a week when we estimated it
+              will take us a couple of months to solve.”
+            </p>
+          </div>
+          <div
+            class="bg-[#a1c4c088] rounded-[35px] border-[2px] border-gray-500 w-[300px] h-[300px] p-[20px] shrink-0 snap-center"
+          >
+            <h3 class="font-Inter font-semibold text-[20px]">Simon</h3>
+            <p>
+              “An excellent introduction for new visitors to Romania. I was made
+              to feel very welcome and it is clear these guys know what they are
+              talking about – Recommended!”
+            </p>
+          </div>
+          <div
+            class="bg-[#a1c4c088] rounded-[35px] border-[2px] border-gray-500 w-[300px] h-[300px] p-[20px] shrink-0 snap-center"
+          >
+            <h3 class="font-Inter font-semibold text-[20px]">Andreia</h3>
+            <p>“What an incredible help for us.</p>
+            <p>
+              We were all installed and running in such a brief time it was like
+              we just had moved across the street.
+            </p>
+            <p>Totally recommended!”</p>
+          </div>
         </div>
-        <div
-          class="bg-[#a1c4c088] rounded-[35px] border-[2px] border-gray-500 w-[300px] h-[300px] p-[20px]"
+        <button
+          class="w-[40px] absolute right-3"
+          (click)="scrollClientsRight()"
         >
-          <h3 class="font-Inter font-semibold text-[20px]">Simon</h3>
-          <p>
-            “An excellent introduction for new visitors to Romania. I was made
-            to feel very welcome and it is clear these guys know what they are
-            talking about – Recommended!”
-          </p>
-        </div>
-        <div
-          class="bg-[#a1c4c088] rounded-[35px] border-[2px] border-gray-500 w-[300px] h-[300px] p-[20px]"
-        >
-          <h3 class="font-Inter font-semibold text-[20px]">Andreia</h3>
-          <p>“What an incredible help for us.</p>
-          <p>
-            We were all installed and running in such a brief time it was like
-            we just had moved across the street.
-          </p>
-          <p>Totally recommended!”</p>
-        </div>
+          <svg
+            class="mr-[0vw]"
+            xmlns="http://www.w3.org/2000/svg"
+            height="80px"
+            viewBox="0 -960 960 960"
+            width="80px"
+            fill="#64ADA5"
+          >
+            <path d="m321-80-71-71 329-329-329-329 71-71 400 400L321-80Z" />
+          </svg>
+        </button>
       </div>
     </div>
   </section>

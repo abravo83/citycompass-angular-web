@@ -13,6 +13,7 @@ import { FooterComponent } from '../footer/footer.component';
 })
 export class HomeComponent {
   @ViewChild('profilesCarrousel') profilesCarrousel!: ElementRef;
+  @ViewChild('clientsCarrousel') clientsCarrousel!: ElementRef;
 
   scrollAmount = 200; // Adjust this value as needed
 
@@ -25,6 +26,19 @@ export class HomeComponent {
 
   scrollProfileRight() {
     this.profilesCarrousel.nativeElement.scrollBy({
+      left: this.scrollAmount,
+      behavior: 'smooth',
+    });
+  }
+  scrollClientsLeft() {
+    this.clientsCarrousel.nativeElement.scrollBy({
+      left: -this.scrollAmount,
+      behavior: 'smooth',
+    });
+  }
+
+  scrollClientsRight() {
+    this.clientsCarrousel.nativeElement.scrollBy({
       left: this.scrollAmount,
       behavior: 'smooth',
     });
