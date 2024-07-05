@@ -47,6 +47,7 @@
         </ul>
       </nav>
       <button
+        (click)="toggleSliderMenu()"
         class="inline-block 2xl:hidden p-[5px] md:p-[10px] border border-gray-400 rounded-2xl ml-auto"
       >
         <svg
@@ -66,4 +67,11 @@
       </button>
     </div>
   </div>
+  <section
+    class="slider__menu rounded-2xl border-2 border-gray-500 drop-shadow-md shadow-inner p-4 wrapper-menu"
+    [class.slider__menu_open]="sliderMenuOpen"
+    [class.slider__menu_closed]="!sliderMenuOpen"
+  >
+    Este es el slider menu
+  </section>
 </section>

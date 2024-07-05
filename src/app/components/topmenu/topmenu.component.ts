@@ -8,4 +8,10 @@ import { RouterModule } from '@angular/router';
   templateUrl: './topmenu.component.html',
   styleUrl: './topmenu.component.css',
 })
-export class TopmenuComponent {}
+export class TopmenuComponent {
+  sliderMenuOpen: boolean = true;
+
+  toggleSliderMenu() {
+    this.sliderMenuOpen = !this.sliderMenuOpen;
+  }
+}
