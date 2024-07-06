@@ -72,6 +72,55 @@
     [class.slider__menu_open]="sliderMenuOpen"
     [class.slider__menu_closed]="!sliderMenuOpen"
   >
-    Este es el slider menu
+    <ul class="flex flex-col">
+      <li
+        (click)="navigateFromSliderMenuTo('/home')"
+        class="p-4 border-b text-[24px] cursor-pointer hover:opacity-60 active:font-semibold"
+      >
+        Home
+      </li>
+      <li
+        (click)="navigateFromSliderMenuTo('/contact-us')"
+        class="p-4 border-b text-[24px] cursor-pointer hover:opacity-60 active:font-semibold"
+      >
+        Contact us
+      </li>
+      <li
+        (click)="navigateFromSliderMenuTo('/experiences')"
+        class="p-4 border-b text-[24px] cursor-pointer hover:opacity-60 active:font-semibold"
+      >
+        Experiences
+      </li>
+      <li
+        (click)="navigateFromSliderMenuTo('/services/consulting')"
+        class="p-4 border-b text-[24px] cursor-pointer hover:opacity-60 active:font-semibold"
+      >
+        International Consulting
+      </li>
+      <li
+        (click)="navigateFromSliderMenuTo('/services/coaching')"
+        class="p-4 border-b text-[24px] cursor-pointer hover:opacity-60 active:font-semibold"
+      >
+        Coaching
+      </li>
+      <li
+        (click)="navigateFromSliderMenuTo('/services/training')"
+        class="p-4 border-b text-[24px] cursor-pointer hover:opacity-60 active:font-semibold"
+      >
+        Training
+      </li>
+      <li
+        (click)="navigateFromSliderMenuTo('/services')"
+        class="p-4 border-b text-[24px] cursor-pointer hover:opacity-60 active:font-semibold"
+      >
+        Services
+      </li>
+      <li
+        (click)="navigateFromSliderMenuTo('/about-us')"
+        class="p-4 border-b text-[24px] cursor-pointer hover:opacity-60 active:font-semibold"
+      >
+        About us
+      </li>
+    </ul>
   </section>
 </section>

@@ -13,8 +13,7 @@
 
 .slider__menu {
   position: fixed;
-  height: calc(100vh - 150px);
-  width: 300px;
+  width: 350px;
   background: whitesmoke;
   margin-top: 2px;
   margin-left: 10px;
@@ -22,7 +21,7 @@
 }
 
 .slider__menu_closed {
-  right: -320px;
+  right: -370px;
 }
 
 .slider__menu_open {

@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { Router, RouterModule } from '@angular/router';
 
 @Component({
   selector: 'app-topmenu',
@@ -9,9 +9,18 @@ import { RouterModule } from '@angular/router';
   styleUrl: './topmenu.component.css',
 })
 export class TopmenuComponent {
-  sliderMenuOpen: boolean = true;
+  sliderMenuOpen: boolean = false;
+
+  constructor(private router: Router) {}
 
   toggleSliderMenu() {
     this.sliderMenuOpen = !this.sliderMenuOpen;
+  }
+
+  navigateFromSliderMenuTo(route: string) {
+    this.sliderMenuOpen = false;
+    setTimeout(() => {
+      this.router.navigate([route]);
+    }, 300);
   }
 }
