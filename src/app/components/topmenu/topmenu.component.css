@@ -20,6 +20,11 @@
   transition: all ease-in-out 300ms;
 }
 
+.ham_btn_active {
+  fill: gray;
+  background: lightgray;
+}
+
 .slider__menu_closed {
   right: -370px;
 }

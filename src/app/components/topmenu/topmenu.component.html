@@ -47,7 +47,9 @@
         </ul>
       </nav>
       <button
+        id="hamburguer-menu-btn"
         (click)="toggleSliderMenu()"
+        [class.ham_btn_active]="sliderMenuOpen"
         class="inline-block 2xl:hidden p-[5px] md:p-[10px] border border-gray-400 rounded-2xl ml-auto"
       >
         <svg
