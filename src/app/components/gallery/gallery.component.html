@@ -5,16 +5,18 @@
   </section>
 </header>
 <main class="wrapper min-h-[calc(100vh-540px)]">
-  <section class="gallery__top flex justify-center">
-    <div class="gallery__top_left w-1/2 flex flex-col gap-5 items-center">
-      <figure>
+  <section class="gallery__top flex flex-col lg:flex-row justify-center gap-5">
+    <div
+      class="gallery__top_left w-full lg:w-1/2 flex flex-col gap-5 items-center"
+    >
+      <figure class="w-full">
         <img
           class="w-full"
           src="./assets/img/gallery/gallery-1-600.webp"
           alt=""
         />
       </figure>
-      <figure>
+      <figure class="w-full">
         <img
           class="w-full"
           src="./assets/img/gallery/gallery-2-600.webp"
@@ -22,7 +24,7 @@
         />
       </figure>
     </div>
-    <div class="gallery__top_right w-1/2 flex flex-col items-center">
+    <div class="gallery__top_right w-full lg:w-1/2 flex flex-col items-center">
       <div class="gallery__top_right_row flex gap-5">
         <figure class="w-1/2">
           <img
@@ -42,17 +44,73 @@
         </figure>
       </div>
       <div
-        class="gallery__top_right_second_row flex justify-center mt-5 gap-5 w-full"
+        class="gallery__top_right_second_row flex justify-center mt-5 gap-5 w-full h-full"
       >
         <figure class="w-full">
           <img
-            class="w-full"
+            class="w-full lg:h-full"
             src="./assets/img/gallery/gallery-5-600.webp"
             alt=""
             srcset=""
           />
         </figure>
       </div>
+    </div>
+  </section>
+  <section
+    class="gallery__bottom flex flex-col lg:flex-row justify-center gap-5 mt-5"
+  >
+    <div
+      class="gallery__bottom_left w-full lg:w-1/2 flex flex-col items-center"
+    >
+      <div class="gallery__bottom_left_row flex gap-5">
+        <figure class="w-1/2">
+          <img
+            class="w-full"
+            src="./assets/img/gallery/gallery-3-600.webp"
+            alt=""
+            srcset=""
+          />
+        </figure>
+        <figure class="w-1/2">
+          <img
+            class="w-full"
+            src="./assets/img/gallery/gallery-4-600.webp"
+            alt=""
+            srcset=""
+          />
+        </figure>
+      </div>
+      <div
+        class="gallery__bottom_left_second_row flex justify-center mt-5 gap-5 w-full h-full"
+      >
+        <figure class="w-full">
+          <img
+            class="w-full lg:h-full"
+            src="./assets/img/gallery/gallery-5-600.webp"
+            alt=""
+            srcset=""
+          />
+        </figure>
+      </div>
+    </div>
+    <div
+      class="gallery__bottom_left w-full lg:w-1/2 flex flex-col gap-5 items-center"
+    >
+      <figure class="w-full">
+        <img
+          class="w-full"
+          src="./assets/img/gallery/gallery-1-600.webp"
+          alt=""
+        />
+      </figure>
+      <figure class="w-full">
+        <img
+          class="w-full"
+          src="./assets/img/gallery/gallery-2-600.webp"
+          alt=""
+        />
+      </figure>
     </div>
   </section>
 </main>

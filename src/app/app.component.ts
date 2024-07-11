@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, inject, OnInit } from '@angular/core';
 import { NavigationEnd, Router, RouterOutlet } from '@angular/router';
 import { ViewportScroller } from '@angular/common';
 import { filter } from 'rxjs/operators';
@@ -12,11 +12,10 @@ import { filter } from 'rxjs/operators';
 })
 export class AppComponent implements OnInit {
   title = 'citycompass-angular-web';
+  router = inject(Router);
+  viewportScroller = inject(ViewportScroller);
 
-  constructor(
-    private router: Router,
-    private viewportScroller: ViewportScroller
-  ) {}
+  constructor() {}
 
   ngOnInit(): void {
     this.router.events

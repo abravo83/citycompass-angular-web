@@ -331,106 +331,101 @@
     <!-- mx-[20px] 
       lg:mx-[50px]  -->
     <!-- prettier-ignore-attribute class -->
-    <div
-      class="
-      flex 
-      lg:flex-row 
-      gap-[30px]
-      max-h-[1100px]
-      "
-    >
-      <div
-        class="flex flex-col flex-grow w-[calc(100%-40px)] lg:w-[calc(50%-40px)]"
-      >
-        <figure>
-          <img
-            class="object-contain"
-            srcset="
-              /assets/img/gallery/gallery-1-3800.webp 3800w,
-              /assets/img/gallery/gallery-1-2000.webp 2000w,
-              /assets/img/gallery/gallery-1-1200.webp 1200w,
-              /assets/img/gallery/gallery-1-600.webp   600w
-            "
-            alt="Image 1 gallery of an event"
-          />
-        </figure>
-        <figure class="flex flex-col flex-grow">
-          <img
-            class="mt-[30px] flex-grow"
-            srcset="
-              /assets/img/gallery/gallery-2-350.webp   350w,
-              /assets/img/gallery/gallery-2-600.webp   600w,
-              /assets/img/gallery/gallery-2-1500.webp 1500w,
-              /assets/img/gallery/gallery-2-3000.webp 3000w
-            "
-            alt="An image with a collage of photos from events"
-          />
-        </figure>
-      </div>
-      <div class="flex flex-col w-[calc(100%-40px)] lg:w-[50%]">
-        <div class="flex flex-row gap-[15px]">
-          <div class="w-[calc(50%-5px)]">
-            <figure>
-              <img
-                srcset="
-                  /assets/img/gallery/gallery-3-1000.webp 1000w,
-                  /assets/img/gallery/gallery-3-600.webp   600w,
-                  /assets/img/gallery/gallery-3-350.webp   350w
-                "
-                alt="A picture of a group rafting down a river"
-              />
-            </figure>
-          </div>
-          <div class="w-[calc(50%-5px)]">
-            <figure>
-              <img
-                srcset="
-                  /assets/img/gallery/gallery-4-1000.webp 1000w,
-                  /assets/img/gallery/gallery-4-600.webp   600w,
-                  /assets/img/gallery/gallery-4-350.webp   350w
-                "
-                alt=""
-              />
-            </figure>
-          </div>
+    <a routerLink="/gallery">
+      <div class="flex lg:flex-row gap-[30px] max-h-[1100px]">
+        <div
+          class="flex flex-col flex-grow w-[calc(100%-40px)] lg:w-[calc(50%-40px)]"
+        >
+          <figure>
+            <img
+              class="object-contain"
+              srcset="
+                /assets/img/gallery/gallery-1-3800.webp 3800w,
+                /assets/img/gallery/gallery-1-2000.webp 2000w,
+                /assets/img/gallery/gallery-1-1200.webp 1200w,
+                /assets/img/gallery/gallery-1-600.webp   600w
+              "
+              alt="Image 1 gallery of an event"
+            />
+          </figure>
+          <figure class="flex flex-col flex-grow">
+            <img
+              class="mt-[30px] flex-grow"
+              srcset="
+                /assets/img/gallery/gallery-2-350.webp   350w,
+                /assets/img/gallery/gallery-2-600.webp   600w,
+                /assets/img/gallery/gallery-2-1500.webp 1500w,
+                /assets/img/gallery/gallery-2-3000.webp 3000w
+              "
+              alt="An image with a collage of photos from events"
+            />
+          </figure>
         </div>
-        <figure>
-          <img
-            class="mt-[30px] w-full"
-            srcset="
-              /assets/img/gallery/gallery-5-350.webp   350w,
-              /assets/img/gallery/gallery-5-600.webp   600w,
-              /assets/img/gallery/gallery-5-1000.webp 1500w,
-              /assets/img/gallery/gallery-5-3000.webp 3000w
-            "
-            alt="AN image with a collage of photos from events"
-          />
-        </figure>
+        <div class="flex flex-col w-[calc(100%-40px)] lg:w-[50%]">
+          <div class="flex flex-row gap-[15px]">
+            <div class="w-[calc(50%-5px)]">
+              <figure>
+                <img
+                  srcset="
+                    /assets/img/gallery/gallery-3-1000.webp 1000w,
+                    /assets/img/gallery/gallery-3-600.webp   600w,
+                    /assets/img/gallery/gallery-3-350.webp   350w
+                  "
+                  alt="A picture of a group rafting down a river"
+                />
+              </figure>
+            </div>
+            <div class="w-[calc(50%-5px)]">
+              <figure>
+                <img
+                  srcset="
+                    /assets/img/gallery/gallery-4-1000.webp 1000w,
+                    /assets/img/gallery/gallery-4-600.webp   600w,
+                    /assets/img/gallery/gallery-4-350.webp   350w
+                  "
+                  alt=""
+                />
+              </figure>
+            </div>
+          </div>
+          <figure>
+            <img
+              class="mt-[30px] w-full"
+              srcset="
+                /assets/img/gallery/gallery-5-350.webp   350w,
+                /assets/img/gallery/gallery-5-600.webp   600w,
+                /assets/img/gallery/gallery-5-1000.webp 1500w,
+                /assets/img/gallery/gallery-5-3000.webp 3000w
+              "
+              alt="AN image with a collage of photos from events"
+            />
+          </figure>
+        </div>
       </div>
-    </div>
-    <!-- w-[calc(100vw-40px)] 
-    lg:w-[calc(100vw-100px)]  -->
-    <!-- mt-[30px]  -->
-    <!-- prettier-ignore-attribute class -->
-    <div
-      class="
-        wrapperNarrowTop 
-        flex 
-        flex-row 
-        items-center 
-        mx-[15px] 
-        lg:mx-[50px] 
-        justify-center 
-        h-[15vw]
-        max-h-[390px] 
-        bg-[#0080bb78]
-        text-center
-      "
-    >
-      <p class="istok-web-500 text-[5vw] md:text-[4vw] 2xl:text-[90px]">
-        Get an impression of our community gatherings
-      </p>
-    </div>
+      <!-- w-[calc(100vw-40px)] 
+       lg:w-[calc(100vw-100px)]  -->
+      <!-- mt-[30px]  -->
+      <!-- prettier-ignore-attribute class -->
+      <div
+        class="
+           wrapperNarrowTop 
+           flex 
+           flex-row 
+           items-center 
+           mx-[15px] 
+           lg:mx-[50px] 
+           justify-center 
+           h-[15vw]
+           max-h-[390px] 
+           bg-[#0080bb78]
+           text-center
+         "
+      >
+        <p class="istok-web-500 text-[5vw] md:text-[4vw] 2xl:text-[90px]">
+          Get an impression of our community gatherings
+        </p>
+      </div>
+    </a>
   </section>
 
   <section class="wrapper">
