@@ -17,9 +17,8 @@
 
 .card__front,
 .card__back {
-  position: relative;
   backface-visibility: hidden;
-  background: linear-gradient(to bottom right, #000000, #349792);
+  background: linear-gradient(to bottom right, #000000b4, #349792);
 }
 
 .card__back {
