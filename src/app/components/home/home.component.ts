@@ -1,5 +1,5 @@
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import { RouterModule } from '@angular/router';
+import { RouterLink } from '@angular/router';
 
 import { TopmenuComponent } from '../topmenu/topmenu.component';
 import { FooterComponent } from '../footer/footer.component';
@@ -7,7 +7,7 @@ import { FooterComponent } from '../footer/footer.component';
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [RouterModule, TopmenuComponent, FooterComponent],
+  imports: [RouterLink, TopmenuComponent, FooterComponent],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
 })
