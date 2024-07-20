@@ -6,21 +6,23 @@
         class="py-4 px-4 sm:p-4 sm:px-6 w-full sm:h-[100px] text-[14px] sm:text-[16px] lg:text-[26px] 2xl:text-[26px] hidden 2xl:block"
       >
         <ul class="flex flex-row gap-4 inter-400 flex-wrap justify-end">
-          <li><a routerLink="/about-us">About us</a></li>
+          <li class="hover:opacity-60 transition-all ease-in-out duration-200">
+            <a routerLink="/about-us">About us</a>
+          </li>
           <li>/</li>
-          <li>
+          <li class="hover:opacity-60 transition-all ease-in-out duration-200">
             <a routerLink="/services/consulting"> International Consulting </a>
           </li>
           <li>/</li>
-          <li>
+          <li class="hover:opacity-60 transition-all ease-in-out duration-200">
             <a routerLink="/services/coaching"> Coaching </a>
           </li>
           <li>/</li>
-          <li>
+          <li class="hover:opacity-60 transition-all ease-in-out duration-200">
             <a routerLink="/services/training"> Training </a>
           </li>
           <li>/</li>
-          <li>
+          <li class="hover:opacity-60 transition-all ease-in-out duration-200">
             <a routerLink="/services">Our Services </a>
           </li>
           <!-- <li>/</li>
@@ -43,7 +45,7 @@
             <div class="mx-auto my-[30px] text-center">
               <a routerLink="/contact-us">
                 <button
-                  class="rounded-full bg-[#007FBB] px-6 py-2 text-white inter-400 text-[40px]"
+                  class="rounded-full bg-[#007FBB] px-6 py-2 text-white inter-400 text-[40px] hover:opacity-60 transition-all ease-in-out duration-200"
                 >
                   Contact us
                 </button>
@@ -81,7 +83,7 @@
           <div class="mx-auto my-[30px] md:my-[25px] text-center">
             <a routerLink="/contact-us">
               <button
-                class="rounded-full bg-[#007FBB] px-6 py-2 text-white inter-400"
+                class="rounded-full bg-[#007FBB] px-6 py-2 text-white inter-400 hover:opacity-60 transition-all ease-in-out duration-200"
               >
                 Contact us
               </button>
@@ -217,7 +219,9 @@
             class="shrink-0 snap-center ml-[10vw] sm:ml-0"
             routerLink="/profiles/volker-moser"
           >
-            <figure class="flex flex-col items-center">
+            <figure
+              class="flex flex-col items-center hover:opacity-60 transition-all ease-in-out duration-200"
+            >
               <img
                 class="rounded-full h-[40vw] sm:h-[270px] border-[8px] sm:border-[15px]"
                 src="/assets/img/profiles/Volker-Moser-sq-grey.jpg"
@@ -229,7 +233,9 @@
             </figure>
           </a>
           <a class="shrink-0 snap-center" routerLink="/profiles/sandra-jitianu">
-            <figure class="flex flex-col items-center">
+            <figure
+              class="flex flex-col items-center hover:opacity-60 transition-all ease-in-out duration-200"
+            >
               <img
                 class="rounded-full h-[40vw] sm:h-[270px] border-[8px] sm:border-[15px]"
                 src="/assets/img/profiles/Sandra-Jitianu.jpg"
@@ -241,7 +247,9 @@
             </figure>
           </a>
           <a class="shrink-0 snap-center" routerLink="/profiles/thilo-beyer">
-            <figure class="flex flex-col items-center">
+            <figure
+              class="flex flex-col items-center hover:opacity-60 transition-all ease-in-out duration-200"
+            >
               <img
                 class="rounded-full h-[40vw] sm:h-[270px] border-[8px] sm:border-[15px]"
                 src="/assets/img/profiles/Thilo_Beyer.webp"
@@ -255,7 +263,9 @@
             class="snap-center sm:hidden shrink-0"
             routerLink="/profiles/marco-weber"
           >
-            <figure class="flex flex-col items-center">
+            <figure
+              class="flex flex-col items-center hover:opacity-60 transition-all ease-in-out duration-200"
+            >
               <img
                 class="rounded-full h-[40vw] sm:h-[270px] border-[8px] sm:border-[15px]"
                 src="/assets/img/profiles/Marco-Weber.webp"
@@ -268,7 +278,9 @@
             class="snap-center mr-[75%] sm:hidden shrink-0"
             routerLink="/profiles/christian-pauls"
           >
-            <figure class="flex flex-col items-center">
+            <figure
+              class="flex flex-col items-center hover:opacity-60 transition-all ease-in-out duration-200"
+            >
               <img
                 class="rounded-full h-[40vw] sm:h-[270px] border-[8px] sm:border-[15px]"
                 src="/assets/img/profiles/Cristian-Pauls.webp"
@@ -283,7 +295,9 @@
             class="shrink-0 hidden sm:flex flex-row md:flex-wrap flex-grow justify-evenly gap-5 2xl:gap-[120px]"
           >
             <a routerLink="/profiles/marco-weber">
-              <figure class="flex flex-col items-center">
+              <figure
+                class="flex flex-col items-center hover:opacity-60 transition-all ease-in-out duration-200"
+              >
                 <img
                   class="rounded-full h-[270px] border-[15px]"
                   src="/assets/img/profiles/Marco-Weber.webp"
@@ -295,7 +309,9 @@
               </figure>
             </a>
             <a routerLink="/profiles/christian-pauls">
-              <figure class="flex flex-col items-center">
+              <figure
+                class="flex flex-col items-center hover:opacity-60 transition-all ease-in-out duration-200"
+              >
                 <img
                   class="rounded-full h-[270px] border-[15px]"
                   src="/assets/img/profiles/Cristian-Pauls.webp"
@@ -331,7 +347,10 @@
     <!-- mx-[20px] 
       lg:mx-[50px]  -->
     <!-- prettier-ignore-attribute class -->
-    <a routerLink="/gallery">
+    <a
+      routerLink="/gallery"
+      class=" hover:opacity-60 transition-all ease-in-out duration-200"
+    >
       <div class="flex lg:flex-row gap-[30px] max-h-[1100px]">
         <div
           class="flex flex-col flex-grow w-[calc(100%-40px)] lg:w-[calc(50%-40px)]"
@@ -702,7 +721,8 @@
     </p>
     <p class="font-Inter text-[4vw] 2xl:text-[90px] text-white mt-[50px]">
       <a routerLink="/contact-us">
-        <span class="px-[60px] py-[20px] bg-[#007FBB] rounded-full"
+        <span
+          class="px-[60px] py-[20px] bg-[#007FBB] rounded-full hover:opacity-60 transition-all ease-in-out duration-200"
           >Contact us now</span
         >
       </a>
