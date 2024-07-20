@@ -1,4 +1,5 @@
-import { Component, Input } from '@angular/core';
+import { Component, inject, Input } from '@angular/core';
+import { SingleService } from '../../../services/single.service';
 
 @Component({
   selector: 'app-photo-visor',
@@ -8,5 +9,13 @@ import { Component, Input } from '@angular/core';
   styleUrl: './photo-visor.component.css',
 })
 export class PhotoVisorComponent {
-  @Input() photoVisorContent: string = '';
+  // Decorations
+  @Input() photoVisorContent!: string;
+  // Injectables
+  singleService = inject(SingleService);
+  // Properties
+
+  close(): void {
+    this.singleService.signalVisorVisibility.set(false);
+  }
 }

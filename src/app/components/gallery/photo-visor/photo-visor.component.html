@@ -1,11 +1,28 @@
 <section
+  (click)="close()"
   class="fixed top-0 left-0 w-full h-full bg-[rgba(0,0,0,0.9)] z-[99999] flex justify-center items-center"
 >
-  <figure class="max-h-full w-full flex justify-center items-center p-4">
+  <figure class="max-h-full flex justify-center items-center p-4 relative">
     <img
       class="max-h-screen w-auto object-contain"
-      src="./assets/img/gallery/gallery-1-2000.webp"
+      [src]="'./assets/img/gallery/' + photoVisorContent"
       alt=""
     />
+    <!-- <button class="absolute top-8 right-8 opacity-40">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke-width="1.5"
+        stroke="white"
+        class="md:size-[3vw] size-12"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="m9.75 9.75 4.5 4.5m0-4.5-4.5 4.5M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"
+        />
+      </svg>
+    </button> -->
   </figure>
 </section>

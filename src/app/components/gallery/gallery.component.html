@@ -9,7 +9,10 @@
     <div
       class="gallery__top_left w-full lg:w-1/2 flex flex-col gap-5 items-center"
     >
-      <figure class="w-full cursor-pointer">
+      <figure
+        (click)="openImage('gallery-1-3800.webp')"
+        class="w-full cursor-pointer"
+      >
         <div class="card">
           <div class="card__inner">
             <div class="card__front">
@@ -31,7 +34,10 @@
           </div>
         </div>
       </figure>
-      <figure class="cursor-pointer w-full">
+      <figure
+        (click)="openImage('gallery-2-3000.webp')"
+        class="cursor-pointer w-full"
+      >
         <div class="card">
           <div class="card__inner">
             <div class="card__front">
@@ -56,7 +62,10 @@
     </div>
     <div class="gallery__top_right w-full lg:w-1/2 flex flex-col items-center">
       <div class="gallery__top_right_row flex gap-5">
-        <figure class="cursor-pointer w-1/2">
+        <figure
+          (click)="openImage('gallery-3-1000.webp')"
+          class="cursor-pointer w-1/2"
+        >
           <div class="card">
             <div class="card__inner">
               <div class="card__front">
@@ -79,7 +88,10 @@
             </div>
           </div>
         </figure>
-        <figure class="cursor-pointer w-1/2">
+        <figure
+          (click)="openImage('gallery-4-3000.webp')"
+          class="cursor-pointer w-1/2"
+        >
           <div class="card">
             <div class="card__inner">
               <div class="card__front">
@@ -106,7 +118,10 @@
       <div
         class="gallery__top_right_second_row flex justify-center mt-5 gap-5 w-full h-full"
       >
-        <figure class="cursor-pointer w-full">
+        <figure
+          (click)="openImage('gallery-5-3000.webp')"
+          class="cursor-pointer w-full"
+        >
           <div class="card h-full">
             <div class="card__inner">
               <div class="card__front h-full">
@@ -139,7 +154,10 @@
       class="gallery__bottom_left w-full lg:w-1/2 flex flex-col items-center"
     >
       <div class="gallery__bottom_left_row flex gap-5">
-        <figure class="cursor-pointer w-1/2">
+        <figure
+          (click)="openImage('gallery-7-3000.webp')"
+          class="cursor-pointer w-1/2"
+        >
           <div class="card">
             <div class="card__inner">
               <div class="card__front">
@@ -162,7 +180,10 @@
             </div>
           </div>
         </figure>
-        <figure class="cursor-pointer w-1/2">
+        <figure
+          (click)="openImage('gallery-9-1000.webp')"
+          class="cursor-pointer w-1/2"
+        >
           <div class="card">
             <div class="card__inner">
               <div class="card__front">
@@ -189,7 +210,10 @@
       <div
         class="gallery__bottom_left_second_row flex justify-center mt-5 gap-5 w-full h-full"
       >
-        <figure class="cursor-pointer w-full">
+        <figure
+          (click)="openImage('gallery-6-3000.webp')"
+          class="cursor-pointer w-full"
+        >
           <div class="card">
             <div class="card__inner">
               <div class="card__front">
@@ -217,7 +241,10 @@
     <div
       class="gallery__bottom_left w-full lg:w-1/2 flex flex-col gap-5 items-center"
     >
-      <figure class="cursor-pointer h-full w-full">
+      <figure
+        (click)="openImage('gallery-8-3000.webp')"
+        class="cursor-pointer h-full w-full"
+      >
         <div class="card h-full">
           <div class="card__inner">
             <div class="card__front h-full">
@@ -239,7 +266,10 @@
           </div>
         </div>
       </figure>
-      <figure class="cursor-pointer w-full">
+      <figure
+        (click)="openImage('gallery-10-3000.webp')"
+        class="cursor-pointer w-full"
+      >
         <div class="card">
           <div class="card__inner">
             <div class="card__front">
@@ -269,5 +299,5 @@
 </footer>
 
 @if(visorModalActive){
-<app-photo-visor></app-photo-visor>
+<app-photo-visor [photoVisorContent]="photoVisorContent"></app-photo-visor>
 }

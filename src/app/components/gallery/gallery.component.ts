@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, effect, inject } from '@angular/core';
 import { TopmenuComponent } from '../topmenu/topmenu.component';
 import { FooterComponent } from '../footer/footer.component';
 import { PhotoVisorComponent } from './photo-visor/photo-visor.component';
+import { SingleService } from '../../services/single.service';
 
 @Component({
   selector: 'app-gallery',
@@ -11,6 +12,19 @@ import { PhotoVisorComponent } from './photo-visor/photo-visor.component';
   styleUrl: './gallery.component.css',
 })
 export class GalleryComponent {
-  visorModalActive: boolean = true;
+  singleService = inject(SingleService);
+
+  visorModalActive: boolean = false;
   photoVisorContent: string = '';
+
+  constructor() {
+    effect(() => {
+      this.visorModalActive = this.singleService.signalVisorVisibility();
+    });
+  }
+
+  openImage(image: string) {
+    this.photoVisorContent = image;
+    this.singleService.signalVisorVisibility.set(true);
+  }
 }
