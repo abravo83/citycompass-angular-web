@@ -44,3 +44,6 @@ firebase.json
 .DS_Store
 Thumbs.db
 
+# Local certificates for development
+*.pem
+
