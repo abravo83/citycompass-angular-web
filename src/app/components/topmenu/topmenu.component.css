@@ -14,6 +14,8 @@
 .slider__menu {
   position: fixed;
   width: 350px;
+  max-height: 60vh;
+  overflow-y: auto;
   background: whitesmoke;
   margin-top: 2px;
   margin-left: 10px;
