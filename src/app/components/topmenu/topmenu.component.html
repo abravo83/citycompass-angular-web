@@ -1,10 +1,10 @@
 <section class="sticky-menu">
   <div class="wrapper-menu">
     <div
-      class="w-full bg-[#f1eded] h-[110px] rounded-full px-[20px] flex items-center border border-gray-200 drop-shadow-md"
+      class="w-full bg-[#f1eded] h-[110px] rounded-full px-[10px] xl:px-[20px] flex items-center border border-gray-200 drop-shadow-md"
     >
       <p
-        class="istok-web-bold text-[30px] md:text-[40px] ml-[10px] md:ml-[40px]"
+        class="font-pt-sans font-bold text-[30px] xl:text-[35px] ml-[10px] md:ml-[40px]"
       >
         <a routerLink="/home"> City Compass </a>
       </p>
@@ -13,14 +13,14 @@
       >
         <a routerLink="/contact-us">
           <span
-            class="text-white text-[16px] md:text-[22px] font-Inter font-medium hover:opacity-60 transition-all ease-in-out duration-200"
+            class="text-white text-[26px] font-Inter font-medium hover:opacity-60 transition-all ease-in-out duration-200"
           >
             Contact us
           </span>
         </a>
       </button>
       <nav
-        class="ml-auto mr-[30px] font-Inter text-[24px] hidden 2xl:inline-block"
+        class="ml-auto mr-[30px] font-Inter text-[20px] 2xl:text-[24px] hidden lg:inline-block"
       >
         <ul class="flex items-center">
           <li>
@@ -50,7 +50,7 @@
         id="hamburguer-menu-btn"
         (click)="toggleSliderMenu()"
         [class.ham_btn_active]="sliderMenuOpen"
-        class="inline-block 2xl:hidden p-[5px] md:p-[10px] border border-gray-400 rounded-2xl ml-auto"
+        class="inline-block lg:hidden p-[5px] md:p-[10px] border border-gray-400 rounded-2xl ml-auto"
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"

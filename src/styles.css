@@ -3,6 +3,11 @@
 @tailwind components;
 @tailwind utilities;
 
+/* @import 'swiper/css'; */
+/* @import 'swiper/css/navigation'; */
+/* @import 'swiper/css/pagination'; */
+/* @import 'swiper/css/scrollbar'; */
+
 @font-face {
   font-family: "Inter";
   src: url("/assets/fonts/Inter/Inter-VariableFont_slnt\,wght.ttf")

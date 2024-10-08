@@ -14,7 +14,7 @@
 .slider__menu {
   position: fixed;
   width: 350px;
-  max-height: 60vh;
+  max-height: 80vh;
   overflow-y: auto;
   background: whitesmoke;
   margin-top: 2px;
@@ -44,12 +44,36 @@
   .wrapper-menu {
     max-width: 1500px;
     margin: 10px auto 0;
-    padding: 0 50px;
+    padding: 0 20px;
   }
   .slider__menu_open {
     right: 50px;
   }
 }
+
+/* /* @media (min-width: 1024px) {
+  .wrapper-menu {
+    max-width: 1000px;
+    margin: 10px auto 0;
+    padding: 0 50px;
+  }
+
+  .slider__menu_open {
+    display: none;
+  }
+} */
+
+/* @media (min-width: 1024px) {
+  .wrapper-menu {
+    max-width: 1000px;
+    margin: 10px auto 0;
+    padding: 0 50px;
+  }
+
+  .slider__menu_open {
+    display: none;
+  }
+}  */
 
 @media (min-width: 1536px) {
   .wrapper-menu {

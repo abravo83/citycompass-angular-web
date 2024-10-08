@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        Istok: ['"Istok"', "sans-serif"],
-        Inter: ['"Inter"', "sans-serif"],
+        'Istok': ['"Istok"', "sans-serif"],
+        'Inter': ['"Inter"', "sans-serif"],
+        'pt-sans': ['"PT Sans"', "sans-serif"],
       },
     },
   },
