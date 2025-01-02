@@ -1,4 +1,4 @@
-.wrapper {
+/* .wrapper {
   margin: 10px auto 0;
   padding: 0 20px;
 }
@@ -67,7 +67,7 @@
   }
 }
 
-/* @media (min-width: 1366px) {
+@media (min-width: 1366px) {
   .wrapper {
     max-width: 1300;
     margin: 100px auto 0;
@@ -90,8 +90,8 @@
     margin: 30px auto 0;
     padding: 0 10px;
   }
-} */
-/* @media (min-width: 1536px) {
+}
+@media (min-width: 1536px) {
   .wrapper {
     max-width: 1500px;
     margin: 100px auto 0;
