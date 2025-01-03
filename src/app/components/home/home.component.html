@@ -29,24 +29,24 @@
           <li>Meet us</li> -->
         </ul>
       </nav>
-      
+
       <div class="flex flex-col lg:flex-row h-[80%] justify-around">
         <div
-          class="lg:px-[80px] h-full text-center flex flex-col justify-center text-[40px] font-pt-sans md:font-bold sm:text-[60px] lg:text-[5vw] 2xl:text-[70px]"
+          class="lg:px-[80px] h-full text-center flex flex-col justify-center text-[40px] font-pt-sans font-bold sm:text-[60px] lg:text-[5vw] 2xl:text-[60px]"
         >
           <h1>City Compass.</h1>
           <p>Feel at home.</p>
           <div class="hidden lg:block">
             <p
-              class="inter-400 text-[30px] lg:text-[32px] mt-[30px] text-center p-[10px]"
+              class="inter-400 text-[22px] lg:text-[24px] mt-[30px] text-center p-[10px]"
             >
               We are here to help you navigate the current landscape by focusing
               on your course.
             </p>
-            <div class="mx-auto my-[30px] text-center">
+            <div class="mx-auto mb-[20px] text-center">
               <a routerLink="/contact-us">
                 <button
-                  class="rounded-full bg-[#007FBB] px-6 py-2 text-white inter-400 text-[40px] hover:opacity-60 transition-all ease-in-out duration-200"
+                  class="rounded-full bg-[#007FBB] px-6 py-2 text-white inter-400 text-[26px] hover:opacity-60 transition-all ease-in-out duration-200"
                 >
                   Contact us
                 </button>
@@ -56,7 +56,7 @@
         </div>
         <div
           id="compass-img-container"
-          class="w-full lg:w-[45vw] 2xl:w-[550px] flex justify-center items-center p-[20px]"
+          class="w-full lg:w-[35vw] 2xl:w-[400px] flex justify-center items-center p-[30px]"
         >
           <div class="w-[300px] md:w-[400px] 2xl:w-[500px]">
             <div
@@ -138,7 +138,7 @@
     >
       <div class="flex flex-row justify-between items-center">
         <div
-          class="flex flex-col flex-shrink text-[27px] sm:text-[4vw] 2xl:text-[65px] w-[100%]"
+          class="flex flex-col flex-shrink text-[27px] sm:text-[4vw] 2xl:text-[60px] w-[100%]"
         >
           <p>Across:</p>
           <p>/countries</p>
@@ -175,7 +175,7 @@
     </div>
   </section>
   <!-- Coaches bubble -->
-  <section class="wrapper flex flex-row mt-[60px] mx-[20px] lg:mx-[50px]">
+  <section class="wrapper flex flex-row mt-[60px] mx-[20px]">
     <!-- prettier-ignore-attribute class -->
     <div
       class="
@@ -194,7 +194,7 @@
       "
     >
       <h2
-        class="font-pt-sans md:font-bold text-[30px] sm:text-[4vw] 2xl:text-[80px] mt-[30px] text-center w-full"
+        class="font-pt-sans md:font-bold text-[30px] sm:text-[4vw] 2xl:text-[60px] mt-[30px] text-center w-full"
       >
         Meet our coaches and consultants
       </h2>
@@ -318,36 +318,44 @@
         <style>
           swiper-container::part(button-prev),
           swiper-container::part(button-next) {
-            color: #64ADA5;
+            color: #64ada5;
             font-size: 30px; /* Increase the font size of the arrow */
             font-weight: 900;
             width: 20%;
             height: 20%;
           }
-      
         </style>
-        <swiper-container navigation="true" autoplay="true" loop="true" speed="1500" #swiperContainer>
+        <swiper-container
+          navigation="true"
+          autoplay="true"
+          loop="true"
+          speed="1500"
+          #swiperContainer
+        >
           <swiper-slide>
             <a
-                class="shrink-0 snap-center ml-[10vw] sm:ml-0"
-                routerLink="/profiles/volker-moser"
+              class="shrink-0 snap-center ml-[10vw] sm:ml-0"
+              routerLink="/profiles/volker-moser"
+            >
+              <figure
+                class="flex flex-col items-center hover:opacity-60 transition-all ease-in-out duration-200 mt-5"
               >
-                <figure
-                  class="flex flex-col items-center hover:opacity-60 transition-all ease-in-out duration-200 mt-5"
-                >
-                  <img
-                    class="rounded-full h-[40vw] sm:h-[270px] border-[8px] sm:border-[15px]"
-                    src="/assets/img/profiles/Volker-Moser-sq-grey.jpg"
-                    alt="Volker Moser profile picture"
-                  />
-                  <figcaption class="inter-400 text-[20px]">
-                    Volker Moser
-                  </figcaption>
-                </figure>
-              </a>
+                <img
+                  class="rounded-full h-[40vw] sm:h-[270px] border-[8px] sm:border-[15px]"
+                  src="/assets/img/profiles/Volker-Moser-sq-grey.jpg"
+                  alt="Volker Moser profile picture"
+                />
+                <figcaption class="inter-400 text-[20px]">
+                  Volker Moser
+                </figcaption>
+              </figure>
+            </a>
           </swiper-slide>
           <swiper-slide>
-            <a class="shrink-0 snap-center" routerLink="/profiles/sandra-jitianu">
+            <a
+              class="shrink-0 snap-center"
+              routerLink="/profiles/sandra-jitianu"
+            >
               <figure
                 class="flex flex-col items-center hover:opacity-60 transition-all ease-in-out duration-200 mt-10"
               >
@@ -372,45 +380,46 @@
                   src="/assets/img/profiles/Thilo_Beyer.webp"
                   alt="Thilo Beyer profile picture"
                 />
-                <figcaption class="inter-400 text-[20px]">Thilo Beyer</figcaption>
+                <figcaption class="inter-400 text-[20px]">
+                  Thilo Beyer
+                </figcaption>
+              </figure>
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <a class="snap-center shrink-0" routerLink="/profiles/marco-weber">
+              <figure
+                class="flex flex-col items-center hover:opacity-60 transition-all ease-in-out duration-200 mt-10"
+              >
+                <img
+                  class="rounded-full h-[40vw] sm:h-[270px] border-[8px] sm:border-[15px]"
+                  src="/assets/img/profiles/Marco-Weber.webp"
+                  alt="Marco Weber profile picture"
+                />
+                <figcaption class="inter-400 text-[20px]">
+                  Marco Weber
+                </figcaption>
               </figure>
             </a>
           </swiper-slide>
           <swiper-slide>
             <a
-                class="snap-center shrink-0"
-                routerLink="/profiles/marco-weber"
+              class="snap-center shrink-0"
+              routerLink="/profiles/christian-pauls"
+            >
+              <figure
+                class="flex flex-col items-center hover:opacity-60 transition-all ease-in-out duration-200 mt-10"
               >
-                <figure
-                  class="flex flex-col items-center hover:opacity-60 transition-all ease-in-out duration-200 mt-10"
-                >
-                  <img
-                    class="rounded-full h-[40vw] sm:h-[270px] border-[8px] sm:border-[15px]"
-                    src="/assets/img/profiles/Marco-Weber.webp"
-                    alt="Marco Weber profile picture"
-                  />
-                  <figcaption class="inter-400 text-[20px]">Marco Weber</figcaption>
-                </figure>
-              </a>
-          </swiper-slide>
-          <swiper-slide>
-            <a
-                class="snap-center shrink-0"
-                routerLink="/profiles/christian-pauls"
-              >
-                <figure
-                  class="flex flex-col items-center hover:opacity-60 transition-all ease-in-out duration-200 mt-10"
-                >
-                  <img
-                    class="rounded-full h-[40vw] sm:h-[270px] border-[8px] sm:border-[15px]"
-                    src="/assets/img/profiles/Cristian-Pauls.webp"
-                    alt="Christian Pauls profile picture"
-                  />
-                  <figcaption class="inter-400 text-[20px]">
-                    Christian Pauls
-                  </figcaption>
-                </figure>
-              </a>
+                <img
+                  class="rounded-full h-[40vw] sm:h-[270px] border-[8px] sm:border-[15px]"
+                  src="/assets/img/profiles/Cristian-Pauls.webp"
+                  alt="Christian Pauls profile picture"
+                />
+                <figcaption class="inter-400 text-[20px]">
+                  Christian Pauls
+                </figcaption>
+              </figure>
+            </a>
           </swiper-slide>
         </swiper-container>
         <!-- <swiper-button-prev class=""></swiper-button-prev>
@@ -418,7 +427,6 @@
       </div>
     </div>
   </section>
-
 
   <!-- Gallery bubble -->
   <section class="wrapper">
@@ -431,6 +439,27 @@
       routerLink="/gallery"
       class=" hover:opacity-60 transition-all ease-in-out duration-200"
     >
+      <!-- prettier-ignore-attribute class -->
+      <div
+        class="
+   flex 
+   flex-row 
+   items-center 
+   lg:mx-0 
+   justify-center 
+   py-2
+   max-h-[390px] 
+   bg-[#0080bb78]
+   text-center
+   rounded-t-xl
+   "
+      >
+        <p
+          class="font-pt-sans md:font-semibold text-[5vw] md:text-[4vw] 2xl:text-[60px]"
+        >
+          Get an impression of our community gatherings
+        </p>
+      </div>
       <div class="flex lg:flex-row gap-[30px] max-h-[1100px]">
         <div
           class="flex flex-col flex-grow w-[calc(100%-40px)] lg:w-[calc(50%-40px)]"
@@ -487,7 +516,7 @@
               </figure>
             </div>
           </div>
-          <figure>
+          <figure class="flex flex-grow">
             <img
               class="mt-[30px] w-full"
               srcset="
@@ -501,29 +530,6 @@
           </figure>
         </div>
       </div>
-      <!-- w-[calc(100vw-40px)] 
-       lg:w-[calc(100vw-100px)]  -->
-      <!-- mt-[30px]  -->
-      <!-- prettier-ignore-attribute class -->
-      <div
-        class="
-           wrapperNarrowTop 
-           flex 
-           flex-row 
-           items-center 
-           mx-[15px] 
-           lg:mx-[50px] 
-           justify-center 
-           h-[15vw]
-           max-h-[390px] 
-           bg-[#0080bb78]
-           text-center
-         "
-      >
-        <p class="font-pt-sans md:font-medium text-[5vw] md:text-[4vw] 2xl:text-[90px]">
-          Get an impression of our community gatherings
-        </p>
-      </div>
     </a>
   </section>
 
@@ -532,7 +538,9 @@
     <div
       class="w-full bg-[#a9a6a6] px-[10px] py-[20px] md:py-[100px] text-center"
     >
-      <p class="font-pt-sans font-[400] text-[25px] sm:text-[5vw] 2xl:text-[90px]">
+      <p
+        class="font-pt-sans font-[400] text-[25px] sm:text-[5vw] 2xl:text-[90px]"
+      >
         What our customers say
       </p>
       <!-- prettier-ignore-attribute class -->
@@ -788,7 +796,6 @@
     wrapper
       mt-[80px] 
       mx-[20px] 
-      lg:mx-[50px] 
       p-[10px] 
       md:p-[5vw]
       text-center
@@ -796,10 +803,12 @@
   >
     <!-- w-[calc(100vw-40px)] 
       lg:w-[calc(100vw-100px)]  -->
-    <p class="font-pt-sans font-[400] text-[30px] sm:text-[5vw] 2xl:text-[90px]">
+    <p
+      class="font-pt-sans font-[400] text-[30px] sm:text-[5vw] 2xl:text-[60px]"
+    >
       Are you ready to jump onboard?
     </p>
-    <p class="font-Inter text-[4vw] 2xl:text-[90px] text-white mt-[50px]">
+    <p class="font-Inter text-[4vw] 2xl:text-[60px] text-white mt-[50px]">
       <a routerLink="/contact-us">
         <span
           class="px-[60px] py-[20px] bg-[#007FBB] rounded-full hover:opacity-60 transition-all ease-in-out duration-200"
