@@ -118,12 +118,12 @@
 }
 
 .wrapper {
-  margin: 10px auto 0;
+  margin: 20px auto 0;
   padding: 0 20px;
 }
 
 .wrapper-top {
-  margin: 150px auto 0;
+  margin: 80px auto 0;
   padding: 0 20px;
 }
 .box__shadow {
@@ -138,7 +138,7 @@
   }
 
   .wrapper-top {
-    margin: 150px auto 0;
+    margin: 90px auto 0;
     padding: 0 50px;
   }
 
