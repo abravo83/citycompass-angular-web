@@ -157,7 +157,7 @@
 @media (min-width: 1024px) {
   .wrapper {
     max-width: 1400px;
-    margin: 100px auto 0;
+    margin: 70px auto 0;
     padding: 0 50px;
   }
 
@@ -167,8 +167,8 @@
   }
 
   .wrapper-top {
-    max-width: 1536px;
-    margin: 20px auto 0;
+    max-width: 1400px;
+    margin: 10px auto 0;
     padding: 0 50px;
   }
 
@@ -180,6 +180,12 @@
 }
 
 @media (min-width: 1536px) {
+  .wrapper-top {
+    max-width: 1536px;
+    margin: 10px auto 0;
+    padding: 0 50px;
+  }
+
   .wrapper {
     max-width: 1536px;
     margin: 100px auto 0;
