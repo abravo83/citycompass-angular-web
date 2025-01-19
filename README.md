@@ -25,3 +25,10 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## Design notes:
+
+Head titles: PT Sans 40px sm:60px lg:5vw 2xl:60px
+Section Titles: PT Sans 27px sm:4vw 2xl:60px / 30px
+(font-pt-sans md:font-semibold text-[5vw] md:text-[4vw] 2xl:text-[60px])
+Section content text: font-Inter 4vw xl:25px
