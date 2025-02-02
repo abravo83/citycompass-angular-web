@@ -47,3 +47,6 @@ Thumbs.db
 # Local certificates for development
 *.pem
 
+# Environments
+src/environments/
+
