@@ -1,6 +1,6 @@
 {
-  "name": "citycompass-angular-web",
-  "version": "0.0.0",
+  "name": "citycompass-web",
+  "version": "0.0.1",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
