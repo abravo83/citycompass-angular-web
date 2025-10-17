@@ -14,6 +14,7 @@ import { MarcoWeberComponent } from './components/profiles/marco-weber/marco-web
 import { ChristianPaulsComponent } from './components/profiles/christian-pauls/christian-pauls.component';
 import { ContactUsComponent } from './components/contact-us/contact-us.component';
 import { GalleryComponent } from './components/gallery/gallery.component';
+import { MichaellaBenvenistiComponent } from './components/profiles/michaella-benvenisti/michaella-benvenisti.component';
 
 export const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -31,6 +32,7 @@ export const routes: Routes = [
   { path: 'profiles/thilo-beyer', component: ThiloBeyerComponent },
   { path: 'profiles/marco-weber', component: MarcoWeberComponent },
   { path: 'profiles/christian-pauls', component: ChristianPaulsComponent },
+  { path: 'profiles/michaella-benvenisti', component: MichaellaBenvenistiComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', redirectTo: 'home' },
 ];

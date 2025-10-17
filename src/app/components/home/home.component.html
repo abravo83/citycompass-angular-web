@@ -236,7 +236,7 @@
       <div class="flex justify-center" id="carrouselContainer">
         <div
           id="profile-carrousel"
-          class="hidden sm:flex flex-row overflow-x-auto md:flex-wrap w-[55vw] sm:w-auto ml-[15%] sm:ml-0 gap-[50px] sm:gap-5 2xl:gap-[0px] mt-[20px] sm:justify-evenly items-center snap-x snap-mandatory no-scrollbar"
+          class="hidden sm:flex flex-row overflow-x-auto sm:flex-wrap w-[55vw] sm:w-auto ml-[15%] sm:ml-0 gap-[50px] sm:gap-5 2xl:gap-[0px] mt-[20px] sm:justify-evenly items-center snap-x snap-mandatory no-scrollbar"
           #profilesCarrousel
         >
           <a
@@ -282,7 +282,20 @@
               <figcaption class="inter-400 text-[20px]">Thilo Beyer</figcaption>
             </figure>
           </a>
-          <!-- Next two a element are only visible below small breakpoint -->
+          <a class="shrink-0 snap-center" routerLink="/profiles/michaella-benvenisti">
+              <figure
+                class="flex flex-col items-center hover:opacity-60 transition-all ease-in-out duration-200"
+              >
+                <img
+                  class="rounded-full h-[270px] md:h-[320px] border-[15px]"
+                  src="/assets/img/profiles/Michaella-Benvenisti.webp"
+                  alt="Michaella Benvenisti profile picture"
+                />
+                <figcaption class="inter-400 text-[20px]">
+                  Michaella Benvenisti
+                </figcaption>
+              </figure>
+            </a>
           <a
             class="snap-center sm:hidden shrink-0"
             routerLink="/profiles/marco-weber"
@@ -316,7 +329,7 @@
             </figure>
           </a>
           <div
-            class="shrink-0 hidden sm:flex flex-row md:flex-wrap flex-grow justify-evenly gap-5 2xl:gap-[120px]"
+            class="shrink-0 hidden sm:flex md:flex-col lg:flex-row sm:flex-wrap flex-grow justify-evenly gap-5 2xl:gap-[120px]"
           >
             <a routerLink="/profiles/marco-weber">
               <figure
@@ -452,6 +465,25 @@
                 />
                 <figcaption class="inter-400 text-[20px]">
                   Christian Pauls
+                </figcaption>
+              </figure>
+            </a>
+          </swiper-slide>
+          <swiper-slide>
+            <a
+              class="snap-center shrink-0"
+              routerLink="/profiles/michaella-benvenisti"
+            >
+              <figure
+                class="flex flex-col items-center hover:opacity-60 transition-all ease-in-out duration-200 mt-10"
+              >
+                <img
+                  class="rounded-full h-[40vw] sm:h-[270px] md:h-[320px] border-[8px] sm:border-[15px]"
+                  src="/assets/img/profiles/Michaella-Benvenisti.webp"
+                  alt="Michaella Benvenisti profile picture"
+                />
+                <figcaption class="inter-400 text-[20px]">
+                  Michaella Benvenisti
                 </figcaption>
               </figure>
             </a>
